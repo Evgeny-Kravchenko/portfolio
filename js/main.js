@@ -36,8 +36,10 @@ let current = 0;
 function slider() {
   for(let i = 0; i < blocks.length; i++) {
     blocks[i].classList.add("slider__single_hidden");
+    blocks[i].style.zIndex = "";
   }
   blocks[current].classList.remove("slider__single_hidden");
+  blocks[current].style.zIndex = "5";
 }
 
 slider();
@@ -63,6 +65,44 @@ function sliderRight() {
 document.querySelector(".btn-left").onclick = sliderLeft;
 
 document.querySelector(".btn-right").onclick = sliderRight;
+
+//Show button
+
+let showButtonThey = document.querySelector("#show-descr-theyalow");
+let descrThey = document.querySelector(".theyalow__descr");
+let swipe = document.querySelector("#swipe");
+
+showButtonThey.addEventListener("click", function() {
+  if(descrThey.style.display === "") {
+    descrThey.style.display = "block";
+    showButtonThey.innerHTML = "Hide description";
+    showButtonThey.style.backgroundColor = "rgba(50, 160, 100, 0.5)";
+    swipe.style.display = "none";
+  } else {
+    descrThey.style.display = "";
+    showButtonThey.innerHTML = "Show description";
+    showButtonThey.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+    swipe.style.display = "block";
+    swipe.style.display = "";
+  }
+});
+
+let showButtonRepair = document.querySelector("#show-descr-repair");
+let descrRepair = document.querySelector(".repair-design-project__descr");
+
+showButtonRepair.addEventListener("click", function() {
+  if(descrRepair.style.display === "") {
+    descrRepair.style.display = "block";
+    showButtonThey.innerHTML = "Hide description";
+    showButtonRepair.style.backgroundColor = "rgba(50, 160, 100, 0.5)";
+    swipe.style.display = "none";
+  } else {
+    descrRepair.style.display = "";
+    showButtonRepair.innerHTML = "Show description";
+    showButtonRepair.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+    swipe.style.display = "block";
+  }
+});
 
 
 

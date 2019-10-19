@@ -181,6 +181,19 @@
   overflow: hidden;
 }
 
+.show-descr {
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+  font: 1rem 'Open Sans', sans-serif;
+  padding: 5px;
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  outline: none;
+}
+
 .slider__h3 {
   z-index: 10;
   width: 100%;
@@ -196,10 +209,14 @@
 
 .slider__img {
   width: 100%;
-  height: 536px;
   display: flex;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+}
+
+.img-back {
+  width: 100%;
 }
 
 .slider__single {
@@ -210,8 +227,62 @@
   transition: all ease 1s;
 }
 
-.theyalow {
-  z-index: 5;
+.descr {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px 20px 50px 20px;
+  bottom: 0;
+  left: 0;
+}
+
+.descr h3 {
+  font: 2rem 'Roboto Condensed', sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.descr p {
+  font: 1rem 'Open Sans', sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.info {
+  display: block;
+  position: absolute;
+  font: 1rem 'Open Sans', sans-serif;
+  background-color: rgb(255, 0, 0);
+  padding: 10px 10px 10px 50px;
+  color: #fff;
+  top: 0;
+  right: 0;
+}
+
+.info::before {
+  content: url("../img/tap-arrow.png");
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.swipe {
+  display: none;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font: 1rem 'Open Sans', sans-serif;
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+  padding: 5px 5px 5px 30px;
+
+}
+
+.swipe::before {
+  content: url("../img/touch.png");
+  position: absolute;
+  top: 4px;
+  left: 2px;
 }
 
 .slider__single img{
@@ -251,42 +322,83 @@ button:hover {
   right: 15px;
 }
 
-@media screen and (max-width: 800px) {
-  .slider__img {
-    height: 500px;
+@media screen and (max-width: 750px) {
+
+  .descr h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .descr p {
+    font-size: 0.9rem;
   }
 }
 
 @media screen and (max-width: 700px) {
   .slider__img {
-    height: 410px;
+
   }
 }
 
 @media screen and (max-width: 600px) {
   .slider__img {
-    height: 320px;
+
   }
 
   .slider__h3 {
     font-size: 1.2rem;
     text-align: left;
   }
+
+  .descr {
+    padding-bottom: 40px;
+  }
+
+  .descr h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .descr p {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
+  .descr {
+    display: none;
+    padding: 20px;
+  }
+
+  .show-descr {
+    display: block;
+    width: 100%;
+  }
+
+  .descr h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .descr p {
+    font-size: 0.7rem;
+  }
+
   .btn-left, .btn-right {
     display: none;
   }
 
   .slider__img {
     min-width: 375px;
+    cursor: none;
   }
-}
 
-@media screen and (max-width: 450px) {
-  .slider__img {
-    height: 280px;
+  .info {
+    display: none;
+  }
+
+  .swipe {
+    display: block;
   }
 }
 
