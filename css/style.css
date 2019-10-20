@@ -217,14 +217,17 @@
 
 .img-back {
   width: 100%;
+  opacity: 0;
 }
 
 .slider__single {
   position: absolute;
+  display: block;
   top: 0;
   left: 0;
   opacity: 1;
   transition: all ease 1s;
+  color: black;
 }
 
 .descr {
@@ -401,6 +404,10 @@ button:hover {
     display: block;
   }
 }
+
+/* .theyalow-iframe {
+  width: 100%;
+} */
 
 
 

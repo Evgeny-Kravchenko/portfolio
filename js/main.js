@@ -87,13 +87,28 @@ showButtonThey.addEventListener("click", function() {
   }
 });
 
+showButtonThey.addEventListener("touchend", function() {
+  if(descrThey.style.display === "") {
+    descrThey.style.display = "block";
+    showButtonThey.innerHTML = "Hide description";
+    showButtonThey.style.backgroundColor = "rgba(50, 160, 100, 0.5)";
+    swipe.style.display = "none";
+  } else {
+    descrThey.style.display = "";
+    showButtonThey.innerHTML = "Show description";
+    showButtonThey.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+    swipe.style.display = "block";
+    swipe.style.display = "";
+  }
+});
+
 let showButtonRepair = document.querySelector("#show-descr-repair");
 let descrRepair = document.querySelector(".repair-design-project__descr");
 
 showButtonRepair.addEventListener("click", function() {
   if(descrRepair.style.display === "") {
     descrRepair.style.display = "block";
-    showButtonThey.innerHTML = "Hide description";
+    showButtonRepair.innerHTML = "Hide description";
     showButtonRepair.style.backgroundColor = "rgba(50, 160, 100, 0.5)";
     swipe.style.display = "none";
   } else {
@@ -103,6 +118,92 @@ showButtonRepair.addEventListener("click", function() {
     swipe.style.display = "block";
   }
 });
+
+showButtonRepair.addEventListener("touchend", function() {
+  if(descrRepair.style.display === "") {
+    descrRepair.style.display = "block";
+    showButtonRepair.innerHTML = "Hide description";
+    showButtonRepair.style.backgroundColor = "rgba(50, 160, 100, 0.5)";
+    swipe.style.display = "none";
+  } else {
+    descrRepair.style.display = "";
+    showButtonRepair.innerHTML = "Show description";
+    showButtonRepair.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+    swipe.style.display = "block";
+  }
+});
+
+const swipeDetect = (el) => {
+  //то, на чём делается swipe
+  let surface = el;
+  //Стартовая позиция по x
+  let startX = 0;
+  //Стартовая позиция по Y
+  let startY = 0;
+  //Прошедшая дистанция по X
+  let distX = 0;
+  //Прошедшая дистанция по Y
+  let distY = 0;
+  //Время, когда мы начали swipe
+  let startTime = 0;
+  //Время до конца swipe
+  let elapsedTime = 0;
+  //Дистанция с которой начинается swipe
+  let threshold = 100;
+  //Ограничение по оси Y (если заступает, то это не  swipe)
+  let restraint = 150;
+  //Длительность swipe
+  let allowedTime = 1000;
+  
+  //Событие для touch
+  surface.addEventListener("touchstart", function(e) {
+    if(e.target.classList.contains("btn-left")) {
+      sliderLeft();
+    } else if(e.target.classList.contains("btn-right")) {
+      sliderRight();
+    }
+
+    let touchObj = e.changedTouches[0];
+    //Координаты mousedown по X
+    startX = touchObj.pageX;
+    //Координаты mousedown по Y
+    startY = touchObj.pageY;
+    //Запомнили момент времени нажатия
+    startTime = new Date().getTime();
+    e.preventDefault();
+  });
+
+  surface.addEventListener("touchmove", function(e) {
+    e.preventDefault();
+  });
+
+
+
+  surface.addEventListener("touchend", function(e) {
+    let touchObj = e.changedTouches[0];
+    //Вычисляем расстояние swipe по X
+    distX = touchObj.pageX - startX;
+    //Координаты mousedown по Y
+    distY = touchObj.pageY - startY;
+    //Время за которое происходит событие
+    elapsedTime = new Date().getTime() - startTime;
+    //Если время между событиями больше, чем время swipe, то swipe происходить не должен
+    if(elapsedTime <= allowedTime) {
+      //Проверка заступов за границы swipe по оси X и Y
+      if(Math.abs(distX) >= threshold && Math.abs(distY) <= restraint) {
+        if(distX > 0) {
+          sliderLeft();
+        } else {
+          sliderRight();
+        }
+      }
+    }
+    e.preventDefault();
+  });
+}
+
+let el = document.querySelector("#slide");
+swipeDetect(el);
 
 
 
