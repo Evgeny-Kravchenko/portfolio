@@ -405,9 +405,58 @@ button:hover {
   }
 }
 
-/* .theyalow-iframe {
+.theyalow-desktop, .repair-desktop {
+  display: none;
   width: 100%;
-} */
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border: 0;
+}
+
+.switch-theyalow, .back-theyalow, .switch-repair, .back-repair {
+  display: none;
+  position: fixed;
+  right: 150px;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s;
+  font: 1rem 'Open Sans', sans-serif;
+}
+
+.switch-theyalow:hover, .back-theyalow:hover, .switch-repair:hover, .back-repair:hover {
+  background-color: #EC9E03;
+}
+
+.mobile-theyalow {
+  width: 640px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: calc((100% - 640px)/2);
+  border: 0;
+}
+
+.mobile-repair {
+  width: 375px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: calc((100% - 375px)/2);
+  border: 0;
+}
+
+.switch-theyalow, .switch-repair {
+  bottom: 120px;
+}
+
+.back-theyalow, .back-repair {
+  bottom: 50px;
+}
 
 
 
