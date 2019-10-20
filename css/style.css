@@ -26,11 +26,51 @@
 
 .name {
   font: 2rem 'Roboto Slab', serif;
+  background-color: rgb(121, 116, 116);
   margin: 0;
   padding: 10px 30px;
-  background-color: rgb(121, 116, 116);
   color: #fff;
   text-align: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(121, 116, 116);
+}
+
+.sprite {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sprite-link {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.vk {
+  background: url("../img/sprites-social-networks.png") no-repeat -43px;
+}
+
+.viber {
+  background: url("../img/sprites-social-networks.png") no-repeat -1px;
+}
+
+.phone {
+  background: url("../img/sprites-social-networks.png") no-repeat -129px;
+}
+
+.mail {
+  background: url("../img/sprites-social-networks.png") no-repeat -86px;
+}
+
+.github {
+  background: url("../img/sprites-social-networks.png") no-repeat -170px;
 }
 
 .links {

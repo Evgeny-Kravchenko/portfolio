@@ -288,7 +288,7 @@ const projectShow = function() {
   //Клик по кнопке переключения Desktop/Mobile
   switchRepair.addEventListener("click", function(e) {
     repairIframe.classList.toggle("mobile-repair");
-    if(switchTheyalow.innerHTML === "Mobile") {
+    if(switchRepair.innerHTML === "Mobile") {
       switchRepair.innerHTML = "Desktop";
     } else {
       switchRepair.innerHTML = "Mobile";
