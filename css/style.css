@@ -14,7 +14,7 @@
 .header__photo {
   width: 250px;
   min-width: 200px;
-  border: 10px solid rgb(121, 116, 116);
+  border: 10px solid #797474;
   overflow: hidden;
 }
 
@@ -25,11 +25,11 @@
 }
 
 .name {
-  font: 2rem 'Roboto Slab', serif;
-  background-color: rgb(121, 116, 116);
+  font: 2rem "Roboto Slab", serif;
+  background-color: #797474;
   margin: 0;
   padding: 10px 30px;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -37,7 +37,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(121, 116, 116);
+  background-color: #797474;
 }
 
 .sprite {
@@ -76,14 +76,14 @@
 .links {
   display: flex;
   flex-direction: column;
-  background-color: rgb(173, 166, 166);
+  background-color: #797474;
   margin-top: 20px;
 }
 
 .links__h3 {
-  font: 1.5rem 'Roboto Slab', serif;
-  background-color: rgb(121, 116, 116);
-  color: #fff;
+  font: 1.5rem "Roboto Slab", serif;
+  background-color: #797474;
+  color: #ffffff;
   padding: 10px;
 }
 
@@ -93,8 +93,8 @@
 }
 
 .list__item {
-  font: 1.2rem 'Open Sans', sans-serif;
-  color: rgb(83, 81, 81);
+  font: 1.2rem "Open Sans", sans-serif;
+  color: #535151;
   list-style: decimal;
   list-style-position: inside;
   margin-bottom: 20px;
@@ -102,13 +102,13 @@
 }
 
 .list__link {
-  color: rgb(35, 110, 60);
+  color: #236e3c;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .list__link:hover {
-  color: #fff;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 920px) {
@@ -123,7 +123,7 @@
 
   .header__photo {
     width: 100%;
-    background-color: rgb(121, 116, 116);
+    background-color: #797474;
     border: none;
     padding-top: 20px;
   }
@@ -150,11 +150,6 @@
   }
 }
 
-@media screen and (max-width: 900px) {
-
-
-}
-
 @media screen and (max-width: 600px) {
   .name {
     font-size: 1.3rem;
@@ -178,10 +173,10 @@
   display: block;
   height: 50px;
   width: 100%;
-  font: 1.5rem 'Roboto Slab', serif;
-  color: #fff;
+  font: 1.5rem "Roboto Slab", serif;
+  color: #ffffff;
   outline: none;
-  background-color: rgb(121, 116, 116);
+  background-color: #797474;
   border: none;
   cursor: pointer;
   transition: 0.5s;
@@ -194,12 +189,13 @@
   right: 20px;
 }
 
-.toggle-active, .toggle:hover {
-  background-color: rgb(83, 81, 81);
+.toggle-active,
+.toggle:hover {
+  background-color: #535151;
 }
 
 .block-open {
-  background-color: rgb(173, 166, 166);
+  background-color: #ada6a6;
   display: none;
   overflow: hidden;
 }
@@ -226,7 +222,7 @@
   display: none;
   top: 0;
   right: 0;
-  font: 1rem 'Open Sans', sans-serif;
+  font: 1rem "Open Sans", sans-serif;
   padding: 5px;
   transition: 0.5s;
   background-color: rgba(255, 255, 255, 0.5);
@@ -239,9 +235,9 @@
   width: 100%;
   top: 0;
   left: 0;
-  font: 1.5rem 'Roboto Slab', serif;
-  background-color: rgb(121, 116, 116);
-  color: #fff;
+  font: 1.5rem "Roboto Slab", serif;
+  background-color: #797474;
+  color: #ffffff;
   padding: 10px;
   box-sizing: border-box;
   text-align: center;
@@ -279,13 +275,13 @@
 }
 
 .descr h3 {
-  font: 2rem 'Roboto Condensed', sans-serif;
+  font: 2rem "Roboto Condensed", sans-serif;
   text-align: center;
   margin-bottom: 20px;
 }
 
 .descr p {
-  font: 1rem 'Open Sans', sans-serif;
+  font: 1rem "Open Sans", sans-serif;
   text-align: justify;
   line-height: 1.5;
 }
@@ -293,10 +289,10 @@
 .info {
   display: block;
   position: absolute;
-  font: 1rem 'Open Sans', sans-serif;
-  background-color: rgb(255, 0, 0);
+  font: 1rem "Open Sans", sans-serif;
+  background-color: #ff0000;
   padding: 10px 10px 10px 50px;
-  color: #fff;
+  color: #ffffff;
   top: 0;
   right: 0;
 }
@@ -314,11 +310,10 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  font: 1rem 'Open Sans', sans-serif;
-  background-color: rgb(255, 0, 0);
-  color: #fff;
+  font: 1rem "Open Sans", sans-serif;
+  background-color: #ff0000;
+  color: #ffffff;
   padding: 5px 5px 5px 30px;
-
 }
 
 .swipe::before {
@@ -328,7 +323,7 @@
   left: 2px;
 }
 
-.slider__single img{
+.slider__single img {
   width: 100%;
 }
 
@@ -336,7 +331,8 @@
   opacity: 0;
 }
 
-.btn-left, .btn-right {
+.btn-left,
+.btn-right {
   position: absolute;
   top: 65px;
   transition: 0.5s;
@@ -366,7 +362,6 @@ button:hover {
 }
 
 @media screen and (max-width: 750px) {
-
   .descr h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
@@ -377,16 +372,7 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 700px) {
-  .slider__img {
-
-  }
-}
-
 @media screen and (max-width: 600px) {
-  .slider__img {
-
-  }
 
   .slider__h3 {
     font-size: 1.2rem;
@@ -427,7 +413,8 @@ button:hover {
     font-size: 0.7rem;
   }
 
-  .btn-left, .btn-right {
+  .btn-left,
+  .btn-right {
     display: none;
   }
 
@@ -445,7 +432,8 @@ button:hover {
   }
 }
 
-.theyalow-desktop, .repair-desktop {
+.theyalow-desktop,
+.repair-desktop {
   display: none;
   width: 100%;
   height: 100%;
@@ -454,7 +442,10 @@ button:hover {
   border: 0;
 }
 
-.switch-theyalow, .back-theyalow, .switch-repair, .back-repair {
+.switch-theyalow,
+.back-theyalow,
+.switch-repair,
+.back-repair {
   display: none;
   position: fixed;
   right: 150px;
@@ -465,11 +456,14 @@ button:hover {
   border: none;
   border-radius: 5px;
   transition: 0.5s;
-  font: 1rem 'Open Sans', sans-serif;
+  font: 1rem "Open Sans", sans-serif;
 }
 
-.switch-theyalow:hover, .back-theyalow:hover, .switch-repair:hover, .back-repair:hover {
-  background-color: #EC9E03;
+.switch-theyalow:hover,
+.back-theyalow:hover,
+.switch-repair:hover,
+.back-repair:hover {
+  background-color: #ec9e03;
 }
 
 .mobile-theyalow {
@@ -477,7 +471,7 @@ button:hover {
   height: 100%;
   position: absolute;
   top: 0;
-  right: calc((100% - 640px)/2);
+  right: calc((100% - 640px) / 2);
   border: 0;
 }
 
@@ -486,19 +480,16 @@ button:hover {
   height: 100%;
   position: absolute;
   top: 0;
-  right: calc((100% - 375px)/2);
+  right: calc((100% - 375px) / 2);
   border: 0;
 }
 
-.switch-theyalow, .switch-repair {
+.switch-theyalow,
+.switch-repair {
   bottom: 120px;
 }
 
-.back-theyalow, .back-repair {
+.back-theyalow,
+.back-repair {
   bottom: 50px;
 }
-
-
-
-
-
