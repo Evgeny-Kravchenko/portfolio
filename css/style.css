@@ -89,7 +89,7 @@ body {
   margin-top: 20px;
 }
 
-.links__h3 {
+.links__name {
   font-family: "Roboto Slab", "Segoe WP", serif;
   font-size: 2.4rem;
   background-color: #797474;
@@ -157,7 +157,7 @@ body {
     padding: 10px;
   }
 
-  .links__h3 {
+  .links__name {
     text-align: center;
   }
 }
@@ -167,7 +167,7 @@ body {
     font-size: 2.08rem;
   }
 
-  .links__h3 {
+  .links__name {
     font-size: 1.92rem;
     text-align: left;
   }
@@ -244,7 +244,7 @@ body {
   outline: none;
 }
 
-.slider__h3 {
+.slider__name {
   z-index: 10;
   width: 100%;
   top: 0;
@@ -273,9 +273,9 @@ body {
 
 .slider__single {
   position: absolute;
-  display: block;
   top: 0;
   left: 0;
+  display: block;
   opacity: 1;
   transition: all ease 1s;
   color: black;
@@ -324,7 +324,6 @@ body {
 
 .swipe {
   display: none;
-  z-index: 10;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -333,6 +332,7 @@ body {
   background-color: #ff0000;
   color: #ffffff;
   padding: 5px 5px 5px 30px;
+  z-index: 10;
 }
 
 .swipe::before {
