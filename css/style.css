@@ -136,7 +136,7 @@ body {
   .header__photo {
     width: 100%;
     background-color: #797474;
-    border: none;
+    border: 0;
     padding-top: 20px;
   }
 
@@ -190,7 +190,7 @@ body {
   color: #ffffff;
   outline: none;
   background-color: #797474;
-  border: none;
+  border: 0;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -240,7 +240,7 @@ body {
   padding: 5px;
   transition: 0.5s;
   background-color: rgba(255, 255, 255, 0.5);
-  border: none;
+  border: 0;
   outline: none;
 }
 
@@ -359,7 +359,7 @@ body {
   width: 36px;
   height: 36px;
   background-size: cover;
-  border: none;
+  border: 0;
   background-color: rgba(255, 255, 255, 0);
   outline: none;
   cursor: pointer;
@@ -471,7 +471,7 @@ button:hover {
   height: 50px;
   cursor: pointer;
   outline: none;
-  border: none;
+  border: 0;
   border-radius: 5px;
   transition: 0.5s;
   font-family: "Open Sans", sans-serif;
