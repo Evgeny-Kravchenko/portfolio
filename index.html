@@ -43,8 +43,10 @@
       </div>
     </header>
     <div class="education">
-      <button id="toggle" class="education_toggle toggle">Education</button>
-      <div class="education__block-open block-open">
+      <button id="toggle" class="education_toggle toggle">Education
+        <img class="arrow arrow-up" id="arrow" src="./img/open-down.png" alt="arrow">
+      </button>
+      <div class="education__block-open block-open" id="block-open">
         <ol class="block-open__list list">
           <li class="list__item">01.09.2002 - 30.06.2013: School number 38 of the city of Vitebsk.</li>
           <li class="list__item">01.09.2013 - 30.06.2018: "Polotsk State University", Faculty of Mechanics and Technology, Specialty Engineering Technology, Honours Degree.</li>
@@ -59,16 +61,16 @@
         <img class="img-back" src="http://placehold.it/900x536" />
         <div class="slider__single theyalow">
           <img id="theyalow" src="./img/THEYALOW.jpg" alt="theyalow">
-          <div class="theyalow__descr descr">
+          <div class="theyalow__descr descr" id="theyalow__descr">
             <h3>Theyalow</h3>
             <p>This project was made for 2 displays width: 1300px and 640px. The main attention is paid to the development of the ability to work with the terms of reference. The basic principles of page making were raised in this project. This page supports 3 browsers: Google Chrome, Mozilla Firefox, Microsoft Edge. This project focuses on the PixelPerfect.</p>
             <span id="info" class="info">Tap to image</span>
           </div>
-          <button id="show-descr-theyalow" class="show-descr">Show description</button>
+          <button class="show-descr gray" id="show-descr-theyalow">Show description</button>
         </div>
         <div class="slider__single repair-design-project">
           <img id="repair-design-project" src="./img/repair.jpg" alt="repair-of-design">
-          <div id="descr" class="repair-design-project__descr descr">
+          <div class="repair-design-project__descr descr" id="repair-design-project__descr">
             <h3>Repair-design-project</h3>
             <p>This project supports responsive web design. Resizing the screen does not spoil the page design. This page supports 3 browsers: Google Chrome, Mozilla Firefox, Microsoft Edge. Here was used the toolkit for automating painful or time-consuming tasks "Gulp" and preprocessor "Sass". </p>
             <span class="info">Tap to image</span>
@@ -86,6 +88,6 @@
   <iframe class="repair-desktop" id="repair-iframe" src="./projects/repair-design-project/index.html" frameborder="0"></iframe>
   <button class="switch-repair" id="switch-repair">Mobile</button>
   <button class="back-repair" id="back-repair">Back</button>
-  <script src="./js/main.js" defer></script>
+  <script src="./js/main.js" type="module" defer></script>
 </body>
 </html>

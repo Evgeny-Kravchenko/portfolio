@@ -195,13 +195,6 @@ body {
   transition: 0.5s;
 }
 
-.toggle::after {
-  content: url("../img/open-down.png");
-  position: absolute;
-  top: 10px;
-  right: 20px;
-}
-
 .toggle-active,
 .toggle:hover {
   background-color: #535151;
@@ -239,7 +232,6 @@ body {
   font-size: 1.6rem;
   padding: 5px;
   transition: 0.5s;
-  background-color: rgba(255, 255, 255, 0.5);
   border: 0;
   outline: none;
 }
@@ -366,7 +358,8 @@ body {
   border-radius: 50%;
 }
 
-button:hover {
+.btn-left:hover,
+.btn-right:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -511,4 +504,37 @@ button:hover {
 .back-theyalow,
 .back-repair {
   bottom: 50px;
+}
+
+/*dynamic classes for js*/
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.arrow {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  transform: rotate(180deg);
+}
+
+.arrow-up {
+  transform: rotate(0deg);
+}
+
+.frontLayer {
+  z-index: 5;
+}
+
+.green {
+  background-color: rgba(50, 160, 100, 0.5);
+}
+
+.gray {
+  background-color: rgba(255, 255, 255, 0.5);
 }
