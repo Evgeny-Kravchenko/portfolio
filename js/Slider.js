@@ -1,10 +1,10 @@
 export default class Slider {
   constructor() {
-    this._slides = document.querySelectorAll(".slider__single");
+    this._slides = Array.from(document.querySelectorAll('.slider__single'));
     this._current = 0;
-    this._btnLeft = document.querySelector(".btn-left");
-    this._btnRight = document.querySelector(".btn-right");
-    this._surface = document.querySelector("#slide");
+    this._btnLeft = document.querySelector('.btn-left');
+    this._btnRight = document.querySelector('.btn-right');
+    this._surface = document.querySelector('#slide');
     this._startX = 0;
     this._startY = 0;
     this._distX = 0;
@@ -18,12 +18,12 @@ export default class Slider {
 
   start() {
     this._slides.forEach(item => {
-      item.classList.add("slider__single_hidden");
-      item.classList.remove("frontLayer");
+      item.classList.add('slider__single_hidden');
+      item.classList.remove('frontLayer');
     });
 
-    this._slides[this._current].classList.remove("slider__single_hidden");
-    this._slides[this._current].classList.add("frontLayer");
+    this._slides[this._current].classList.remove('slider__single_hidden');
+    this._slides[this._current].classList.add('frontLayer');
   }
 
   _left() {
@@ -35,7 +35,7 @@ export default class Slider {
   }
 
   _clickLeft() {
-    this._btnLeft.addEventListener("click", () => {
+    this._btnLeft.addEventListener('click', () => {
       this._left();
     });
   }
@@ -49,16 +49,17 @@ export default class Slider {
   }
 
   _clickRight() {
-    this._btnRight.addEventListener("click", () => {
+    this._btnRight.addEventListener('click', () => {
       this._right();
     });
   }
 
   _swiperStart() {
-    this._surface.addEventListener("touchstart", e => {
-      if (e.target.classList.contains("btn-left")) {
+    this._surface.addEventListener('touchstart', e => {
+      const targetClassList = e.target.classList;
+      if (targetClassList.contains('btn-left')) {
         this._left();
-      } else if (e.target.classList.contains("btn-right")) {
+      } else if (targetClassList.contains('btn-right')) {
         this._right();
       }
 
@@ -71,13 +72,13 @@ export default class Slider {
   }
 
   _swiperMove() {
-    this._surface.addEventListener("touchmove", e => {
+    this._surface.addEventListener('touchmove', e => {
       e.preventDefault();
     });
   }
 
   _swiperEnd() {
-    this._surface.addEventListener("touchend", e => {
+    this._surface.addEventListener('touchend', e => {
       const touchObj = e.changedTouches[0];
       this._distX = touchObj.pageX - this._startX;
       this._distY = touchObj.pageY - this._startY;
@@ -87,11 +88,7 @@ export default class Slider {
           Math.abs(this._distX) >= this._threshold &&
           Math.abs(this._distY) <= this._restraint
         ) {
-          if (this._distX > 0) {
-            this._left();
-          } else {
-            this._right();
-          }
+          this._distX > 0 ? this._left() : this._right();
         }
       }
 

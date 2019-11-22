@@ -1,451 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
-    <title>theyalow</title>
-</head>
-<body>
-  <div class="topBlock">
-    <div class="wrapper">
-      <header>
-        <div class="logo">
-            <a href="#" class="logoForDesktop"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="83" height="83" viewBox="0 0 83 83">
-              <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                  <rdf:Description rdf:about=""/>
-                </rdf:RDF>
-            </x:xmpmeta>
-
-            <?xpacket end="w"?></metadata>
-            <image id="logoImg" width="83" height="83" xlink:href="data:img/png;base64,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"/>
-            </svg></a>
-            <a href="#" class="logoForMobile"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39" height="39" viewBox="0 0 39 39">
-              <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                  <rdf:Description rdf:about=""/>
-                </rdf:RDF>
-            </x:xmpmeta>
-
-            <?xpacket end="w"?></metadata>
-            <image id="logoImg" width="39" height="39" xlink:href="data:img/png;base64,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"/>
-            </svg></a>
-            <h1><a href="#">theyalow</a></h1>
-        </div>
-        <nav>
-          <ul>
-            <li ><a class="aboutUs" href="#">about us</a></li>
-            <li ><a class="services" href="#">services</a></li>
-            <li ><a class="contact" href="#">contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="slider">
-        <div class="video">
-          <video src="#" poster="./assets/images/screenVideoHeader.jpg" class="videoForDesktop"></video>
-          <video src="#" poster="./assets/images/videoBirdMobile.jpg" class="videoForMobile"></video>
-          <button class="bigButtonPlay">
-            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="33.969" viewBox="0 0 19 33.969">
-              <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-               <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                  <rdf:Description rdf:about=""/>
-               </rdf:RDF>
-            </x:xmpmeta>
-            <?xpacket end="w"?></metadata>
-            <defs>
-                <style>
-                  .cls-1 {
-                    fill: #f5f4f2;
-                    fill-rule: evenodd;
-                  }
-                </style>
-              </defs>
-              <path class="cls-1" d="M418.011,317.116a2.109,2.109,0,0,1,3.594-1.464l14.79,14.822A1.959,1.959,0,0,1,437,332a2.007,2.007,0,0,1-.605,1.464l-14.79,14.878a1.906,1.906,0,0,1-2.307.445,1.981,1.981,0,0,1-1.287-1.96V317.116h0Z" transform="translate(-418 -315.031)"/>
-            </svg>
-          </button>
-          <button class="smallButtonPlay">
-            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="17" viewBox="0 0 19 33.969">
-              <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-               <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                  <rdf:Description rdf:about=""/>
-               </rdf:RDF>
-            </x:xmpmeta>
-            <?xpacket end="w"?></metadata>
-            <defs>
-                <style>
-                  .cls-1 {
-                    fill: #f5f4f2;
-                    fill-rule: evenodd;
-                  }
-                </style>
-              </defs>
-              <path class="cls-1" d="M418.011,317.116a2.109,2.109,0,0,1,3.594-1.464l14.79,14.822A1.959,1.959,0,0,1,437,332a2.007,2.007,0,0,1-.605,1.464l-14.79,14.878a1.906,1.906,0,0,1-2.307.445,1.981,1.981,0,0,1-1.287-1.96V317.116h0Z" transform="translate(-418 -315.031)"/>
-            </svg>
-          </button>
-          <progress value="179" max="404"></progress>
-          <button class="volume">
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-              <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                  <rdf:Description rdf:about=""/>
-                </rdf:RDF>
-            </x:xmpmeta>
-            <?xpacket end="w"?></metadata>
-            <defs>
-                <style>
-                  .cls-10 {
-                    fill: #f5c506;
-                    fill-rule: evenodd;
-                  }
-                </style>
-              </defs>
-              <path class="cls-10" d="M674.371,460.977v-0.958H680v0.958h-5.629Zm-0.186-2.8,5.075-2.428,0.416,0.863-5.077,2.429Zm-0.434-2.136L677.239,453l0.52,0.593-3.489,3.042Zm-5.49,7.306v-5.7c1.447-1.32,3.208-2,4.415-3.469v12.638C671.469,465.342,669.709,464.666,668.261,463.347ZM665,457.659h2.915v5.646H665v-5.646Zm12.759,9.746L677.24,468l-3.489-3.041,0.52-.593Zm-3.35-5.4,5.075,2.428-0.414.864-5.077-2.428Z" transform="translate(-665 -453)"/>
-            </svg>
-          </button>
-        </div>
-        <h2>the cool <span>the minimal</span></h2>
-        <button class="leftArrow">
-          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="19" viewBox="0 0 13 19">
-            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-          <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-              <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                <rdf:Description rdf:about=""/>
-              </rdf:RDF>
-          </x:xmpmeta>
-          <?xpacket end="w"?></metadata>
-          <defs>
-              <style>
-                .cls-1 {
-                  fill: #fff;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-1" d="M8.013,328.2l2.961,2.984,0,0,6.3,6.333a2.088,2.088,0,0,0,2.8-.129,2.11,2.11,0,0,0,.283-2.734l-6.277-6.314,6.6-6.039s0.792-1.762-.19-2.764-2.771-.22-2.771-0.22l-6.6,6.042-0.02-.02Z" transform="translate(-8 -319)"/>
-          </svg>
-        </button>
-        <button class="rightArrow">
-          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="19" viewBox="0 0 13 19">
-            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-          <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-              <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                <rdf:Description rdf:about=""/>
-              </rdf:RDF>
-          </x:xmpmeta>
-          <?xpacket end="w"?></metadata>
-          <defs>
-              <style>
-                .cls-1 {
-                  fill: #fff;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path id="Shape_1_copy" data-name="Shape 1 copy" class="cls-1" d="M1291.99,327.2l-2.96,2.985-0.01,0-6.29,6.333a2.1,2.1,0,0,1-2.81-.129,2.119,2.119,0,0,1-.28-2.734l6.28-6.314-6.6-6.039s-0.79-1.762.19-2.764,2.77-.22,2.77-0.22l6.6,6.042,0.02-.02Z" transform="translate(-1279 -318)"/>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-  <main>
-    <div class="svgIcons">
-      <div class="wrapper">
-        <div class="betterDesign">
-          <svg class="betterForDesktop" xmlns="http://www.w3.org/2000/svg" width="109" height="74" viewBox="0 0 109 74">
-            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-          <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-              <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                <rdf:Description rdf:about=""/>
-              </rdf:RDF>
-          </x:xmpmeta>
-          <?xpacket end="w"?></metadata>
-          <defs>
-              <style>
-                .cls-2 {
-                  fill: #f5c506;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-2" d="M334.75,701H276.844a23.449,23.449,0,0,1-6.727-46.024c-0.018-.359-0.086-0.7-0.086-1.067a16.86,16.86,0,0,1,22.388-15.887,27.262,27.262,0,0,1,48.408,9.886A26.851,26.851,0,0,1,334.75,701Zm-20.438-26.909V653.909H300.687v20.182H290.256L307.5,691.119l17.244-17.028H314.312Z" transform="translate(-253 -627)"/>
-          </svg>
-          <svg class="betterForMobile" xmlns="http://www.w3.org/2000/svg" width="89" height="61" viewBox="0 0 89 61">
-            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-          <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                <rdf:Description rdf:about=""/>
-             </rdf:RDF>
-          </x:xmpmeta>
-          <?xpacket end="w"?></metadata>
-          <defs>
-              <style>
-                .cls-2 {
-                  fill: #f5c506;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-2" d="M111.75,483H64.469a19.35,19.35,0,0,1-5.492-37.939c-0.015-.3-0.07-0.578-0.07-0.879a13.747,13.747,0,0,1,18.28-13.1,22.181,22.181,0,0,1,39.526,8.149A22.153,22.153,0,0,1,111.75,483ZM95.062,460.818V444.182H83.937v16.636H75.42L89.5,474.855l14.08-14.037H95.062Z" transform="translate(-45 -422)"/>
-          </svg>
-          <h3>better design</h3>
-        </div>
-        <div class="customise">
-          <svg class="customiseForDesktop" xmlns="http://www.w3.org/2000/svg" width="91.187" height="95" viewBox="0 0 91.187 95">
-            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-          <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-              <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                <rdf:Description rdf:about=""/>
-              </rdf:RDF>
-          </x:xmpmeta>
-          <?xpacket end="w"?></metadata>
-          <defs>
-              <style>
-                .cls-2 {
-                  fill: #f5c506;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-2" d="M690.64,658.57c-4.692,30.106-35.933,32.193-53.4,30.94-1.155,5.178-1.605,8.49-1.605,8.49h-8.588s11.066-41.969,36.85-64.269a62.559,62.559,0,0,1,16.114-10.71c-27.813,10.2-47.219,44.8-55.858,63.2a49.1,49.1,0,0,1-2.423-50.533C635.059,610.058,707,603,707,603S696.312,622.183,690.64,658.57Z" transform="translate(-615.813 -603)"/>
-          </svg>
-          <svg class="customiseForMobile" xmlns="http://www.w3.org/2000/svg" width="67" height="69" viewBox="0 0 67 69">
-            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-          <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                <rdf:Description rdf:about=""/>
-             </rdf:RDF>
-          </x:xmpmeta>
-          <?xpacket end="w"?></metadata>
-          <defs>
-              <style>
-                .cls-2 {
-                  fill: #f5c506;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-2" d="M349.98,458.361c-3.448,21.867-26.4,23.382-39.239,22.473-0.849,3.76-1.179,6.166-1.179,6.166h-6.311s8.132-30.483,27.076-46.68a45.98,45.98,0,0,1,11.84-7.778c-20.436,7.407-34.694,32.535-41.042,45.9a35.318,35.318,0,0,1-1.78-36.7C309.141,423.126,362,418,362,418S354.147,431.933,349.98,458.361Z" transform="translate(-295 -418)"/>
-          </svg>
-          <h3>customise</h3>
-        </div>
-        <div class="itsFree">
-          <svg class="itsFreeForDesktop" xmlns="http://www.w3.org/2000/svg" width="81" height="83" viewBox="0 0 81 83">
-            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-          <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-              <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                <rdf:Description rdf:about=""/>
-              </rdf:RDF>
-          </x:xmpmeta>
-          <?xpacket end="w"?></metadata>
-          <defs>
-              <style>
-                .cls-2 {
-                  fill: #f5c506;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-2" d="M998.231,670.806v24.145l-10.538-13.674L965.831,703,939,620l81,29.176Zm-51.637-42.925,46.068,48.458,5.4-5.365Z" transform="translate(-939 -620)"/>
-          </svg>
-          <svg class="itsFreeForMobile" xmlns="http://www.w3.org/2000/svg" width="68" height="69" viewBox="0 0 68 69">
-            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-          <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                <rdf:Description rdf:about=""/>
-             </rdf:RDF>
-          </x:xmpmeta>
-          <?xpacket end="w"?></metadata>
-          <defs>
-              <style>
-                .cls-2 {
-                  fill: #f5c506;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-2" d="M545.725,460.236v20.073l-8.847-11.368L518.525,487,496,418l68,24.254Zm-43.35-35.685,38.675,40.285,4.533-4.46Z" transform="translate(-496 -418)"/>
-          </svg>
-          <h3>its free</h3>
-        </div>
-      </div>
-    </div>
-    <div class="interactive">
-      <div class="wrapper">
-        <h3>Lorem ipsum dolor sit amet</h3>
-        <section>
-          <div class="note">
-            <p>
-              Lorem ipsum dolor sit amet, consecte&shy;tur adipisicing elit, sed do eiusmod tempor inci&shy;didunt ut
-            </p>
-            <button>
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
-                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-              <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                    <rdf:Description rdf:about=""/>
-                  </rdf:RDF>
-              </x:xmpmeta>
-              <?xpacket end="w"?></metadata>
-              <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #fff;
-                      fill-rule: evenodd;
-                      opacity: 0.7;
-                    }
-                  </style>
-                </defs>
-                <path class="cls-1" d="M466,1104h-4v4h-3v-4h-4v-3h4v-4h3v4h4v3Z" transform="translate(-455 -1097)"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>The Yalow</title>
+  </head>
+  <body>
+    <div class="wrapper-out">
+      <div class="block-wrap">
+        <div class="wrapper">
+          <header class="header">
+            <a class="logo" href="#">
+              <svg class="logo-svg">
+                <image
+                  class="logo-svg-img"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAABTCAMAAADUbMsyAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACMVBMVEX1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQYAAADn+b1cAAAAuXRSTlMAho0BjAKWlQ4yJJwDC2tLHn83owhogE88qQYFB2RTQ7FgWki3CVxdTbwKYlLDDcLIEGy9zRPJcRppitEsxXcXgf6HenlzfbV4zv2uddUP0xS4q/wWvqeoKxEYIiESJ6T6+xwzTE5VWF5jZm1v5IihzDjnnvDmPumLbkJl62Htj5GQ79bl8pPQftTE87OEtLa5nfm/m5qswfiq7PeO9vWt9KLx0ltncCqfx6Wyr8Z7lHxR7j1ZGQRyhRA8xeIAAAABYktHRLqjsUfaAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wkUFgYbSvvQnQAABodJREFUWMOtmYtbUzcUwK9cYTDaCgpxlocVWqVVRFAm4KgUHwgoAh0i6tYi0zEcqIgDFSnqwIlzTLepKCLqfG2oe7rlv1uS+zi5t7dX0m/5Pmhykvx6m5PzSK4k2ZQlSfS8q+AU2VIuL8XCrFSNidOsoPJ7mDHTMwSY72doTJzpiOt1ZGLGdLqWCTCzspdrTLzCDHWswIyZk4tWijAR+kBj4lVuQ1/eKiaV8gsQKhRjotUaE3t4qNujCPPWkDFFgkxULKtM7PXpPT6vKltLh6wTZaKSVHU+9gfUjoBfE7ER64WZaIMGwKXpTL6xDBuYueJMpBPwpnIiLt+EjcyKJJibgbGlUqrcAs0PWf9WAWaVyqyuAcq2j7ZBo1bpDwowt2tMqQ44IajWq/07kmJKO3F82Smp/Sg5phQMmYihXZK0Wx2QJ850kbq7wQgNUeGeOmWAT5zZSK0SeZp4ZDMdsHefMqBFnIk9+YSJmps4JF1D935lf6LWJJi4LUD10R5WkU3tdA0DXnXPo+2LZ34MdtThpJUDCjTcSeo5zg7NjtDBrq6uQ1VaOUzKEYvAkOcr/6TqU842S9lmjERJtTtCq0dLdduML9lqhOj57Njxz3u/6DvxZXCHcQR7uP4BWj0ZxdGTtDJwCtswT6uPtrEiwQDVhwzW0PqZoTP0o+YstmF+pf9eZ64tEw+P0MY5+m9kGNswz3OL6Ltgy8SjKdSoyF/KKLZhFhs0k3/RlonHYsSpIxQbwzbMYyaV562zYoJVDo2jXnTpMrZhFqbqtCWcM6dddVdA8DVAJyaLJifAnM5Cz9XcPlL8MGtAkmIGV/tNMHgNpk6F9fr1ket6PTwFyG9ZpB4ASIw05TRo36BL4m6Dyd8BFEp4GqTf51MkF7mUDEu+CZKdVBDogOmdt+KQtw4A8gcWpTnHfVNVlCMCMha2nFMA+NH8pN0/wddMOenwXdAZ0bMrRzssIXG5Dt9RCJHdtd1GZC18ST/zBZzTbucSNi0LotDbzKoHdUH0TpRDRsugNcg8gQeQhsxKcnsB2szsehgw/rt6/a4fkMPMD3AO22vMAKUA5AehGWbZ9wDkva/W7k8D/h7zAjOA1LMqgJZyyqajZ8EQ73oesM8Hnvu6bGyWDuqExS2NQ0pSC2RDYeZ8Y0O6YO7hPPk//3BOlwzF6JAIIDdZxrsWTtmP6Izxx7pgvnMCT3TO6+3H46qj1sqWBCG09QnohTngSTDHicipCNj7/CRz04B80pooth2EbXHZtb6v9+dZ2ERXA43QmC3qvfD0Gbip0PNESP45X9g+53X2nC+456y0RnLrGTWv5xxbT1CRsp6PwMROWa5n+kvQ+y9sM8Fvm7vN9H6b0/usSe8v0+ORAcjVlf2Zwu9PBfbgV9jyYymm/VkWv+X9eidNYIgdjQIS7MgL0FFmR+2gVrMduacBuSBk7wsAnTa6kAXYFh46sv4sIMsMfumO2S81A3SBgzpmADnNkP2wuK94JDGxV5yys3wkU3YBdAZc8gqYEpSN/uRWptElky/JBD+v+I2t0KmdouVMkL1m+npHPOKU3cGgr6FTiUfyG5DUscXl4ua0ZdxsAGkbW8Ib0PmGQjmbrmFILo7w8X0pF99rYQmv7Q3+hlAtQGYNechmmlDkgoWGBhPnITDrCjuDcEdRuNORf7fJwZR8aRycdMgqvVprOi7JJXZ53R+LyesQWpNvYBb/D/knQgX8Iey8Xf6p5MknmBewzZMReurUkX8iG6Yxnx+0ZSLXRhW5HNkwG03njn4L5uvgs3N9Bb1/HV9Z0qMgM7JtmKVHaS1CLTTKQnQ9fz56XlXZ5TOlH0zlR9gBTD+O/d3VdVBndjhzkPEch7hznMjh8JDGJOfNt8TxaglMmLprKdCWDLNVZe6nG473kE3N9HKBmK84s0WZsW8vbTzkLwWaPOyw3SjO9Ckz6vaQerXpnqHhLRG6xJludcpuSfon7j6E3gBVizP1ixnZ+t4mKaZ26P6Xez6o1iXFDCpT4PxhvAcb0JhVAsytbAbnaE33dX6VmSXArOD9Ek50ryjGrDYy1fvPdMipNogz1xuYfs0rQlaVWiLM7KUT1qnzre6TJblYlFlExl/MU6Zb3nuT6mpBZiGJLfnKvXe70T26ZzQmjQ4izJUoN0e5n48keo9AyulsEeYyF1ULtn3fQUrPYQFmBts8id7LpGlMKXXxSLXgWIL3RzHx90daGUjYY/ue6z/cTTd7Gy/ClAAAAABJRU5ErkJggg=="
+                />
               </svg>
-            </button>
-            <div class="date">
-              <p><span>25</span>april</p>
+              <span class="logo-theyalow">theyalow</span>
+            </a>
+            <nav class="nav">
+              <a class="about-us" href="#">about us</a>
+              <a class="services" href="#">services</a>
+              <a class="contact" href="#">contact</a>
+            </nav>
+          </header>
+          <div class="slider">
+            <div class="slider__video">
+              <video
+                class="slider__video-desktop"
+                src="#"
+                poster="./assets/images/screenVideoHeader.jpg"
+              ></video>
+              <video
+                class="slider__video-mobile"
+                src="#"
+                poster="./assets/images/videoBirdMobile.jpg"
+              ></video>
+              <button class="button-play">
+                <svg
+                  class="button-play-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="19"
+                  height="34"
+                >
+                  <image
+                    class="button-play-img"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAiCAMAAACKqBL2AAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAdVBMVEX19PL19PL19PL19PL1 9PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL1 9PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL///+D8W+VAAAAJXRS TlMARNnvcOB6eXd2dXRzcnFn6+T8VlxeYP1h/mJjZWlrbdtvPM7s5sj7bQAAAAFiS0dEJloImLUA AAAHdElNRQfjCwYAHgND98MkAAAAi0lEQVQoz23S2RaCMAwE0LoibmDBJaLiwvz/L2qPepTM5PG+ NJ1JGAxH4+BmAmDqDGkyYQ7fhpmwHn4NuTDMhf3wz7AQhqWwD/YNK2FYC0tIhkJYKWzDFiuyWNMb iZzFLe0cd/S3/YEysCNlZQ1laifK3grqyM7UpV2oc2vpNhyF64tu7tbuj65x9ARKDTasjNm/2AAA ACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0xMS0wNlQwMDozMDowMyswMzowMI+5HIcAAAAldEVYdGRh dGU6bW9kaWZ5ADIwMTktMTEtMDZUMDA6MzA6MDMrMDM6MDD+5KQ7AAAAAElFTkSuQmCC"
+                  />
+                </svg>
+              </button>
+              <button class="button-play_const"></button>
+              <progress value="179" max="404"></progress>
+              <button class="button-volume"></button>
+            </div>
+            <h1>the cool <span>the minimal</span></h1>
+            <button class="left-arrow"></button>
+            <button class="right-arrow"></button>
+          </div>
+        </div>
+      </div>
+      <main>
+        <div class="description">
+          <div class="wrapper">
+            <div class="description__one">
+              <svg
+                class="description__one-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="109"
+                height="74"
+              >
+                <image
+                  class="description__one-img"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG0AAABKCAMAAACGjyrqAAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACGVBMVEX1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb///+sBNwwAAAAsXRSTlMAIF2RudPi8e/nyql+Rw4rhdv6u2oPAUvB9ZwkO8f7F5r+ ZTTdrhJb99olcOszcewvHAdGhrHe4NWwPjf2zQkmmPCTFP1D6NcF/G/kBkxhG+3EqjmtE/mjVJIi m50ZxXcDyO5J6rQYedBkI6FODJAxPHI9y3hRFqeO3yguY5cC5ro2pskR6QTzq+HGtgi3MJ+4CjK9 QAvAi8INaOOzvMxFg5aVe3VQP7IdENmlzld92GJHxPz4AAAAAWJLR0SyrWrP6AAAAAd0SU1FB+ML BgAPEeOXkXwAAAM4SURBVFjDvdn7OxRRGAfwg1W7kc1t3SLjkopuJCkUusmqJIokbekmlaSoSNmQ FJJSuuqu6/sftvssdoe5vO+ZY78/euZ7PmaemTl7zjDGlYDAIFPwkqVgtiwLCV0exjcILtYV4SBL RGRU9OJQtphYUEhcfMIiYCsTQSVJ8asEW2HJEqjHnCIUS00D7aSvFodlrAG9rF0nCsuUdDGArPVi sA0Iy5WNm4RcRsyZuWPZzClk52zJDd6aty0/dPuOAiQGUFjEY+3cVYwWZCmhW6Xxu/ksAGkPFcvZ y2u5sm8/DYsqM4ABHCBhyLtdNeV2AlYhGdTgIB47dNgoBpV47YhhDCT0bFdlHCPcJ0dFaCYbDquu EaGB5djxbISWIQRzx1xbp6udEKa5fqvUn9TRGgRqAAWnGjW1cqEawGnNh6FYsxvh8E0EhjOf0dDO alabZMc2oc6uLFCFOnf+AgjXQLqoZF1q1n3WuDQou7zAarmSpN/j0yDu6jzsWh6mxqlBuHwR1Io4 MQMaJPvUbLXIErcmXffWgrAlbg3a5maFG+gOvwbtM6UYyR9aoqdzk/Db0YAGnqfgFqFhROtwV6rw 19GY1umumCgNIxrcZuwOqWBIu8tYif+0LtZ9z39aD7tPKxjSwlmrHzUHe+BHrYb1ooxS50xaZFrL 7J9LcS57iDospI9ppQ+3LOpn/biLMKC1lLYP4AZ5xLDXPF19cWtPR47RwNArmnw1zp6LHaKZWbCH QpMyZ8ffmJlsEH0sPB5SwIae4Ad4yobxB8PIwh2sohF8Paub9i7pGZ2HjUYS2sOMPaNoMCbnRsco 5eeMOgfEjvtg4y8o1bRuV+UlSYOJV9731gSp+drdsUo0rnL2O0pYJak36XmA3tA0GPQsIKKJC/QM z/+YSjw56HVz0ajJw5u3s9e/nqjBOydzttEqxXNbJ9W4WccnhQmFtILU7r2T35N3WnGLPW8++D6l +DUOXz7K30BTi4pNNco19NqUI9KnhTPHZ2O75OpxfFGaFb+K3uDy5Nt35Rn/Ry31TtPPdAVTjfWn WO/X70amlYA/f0VRkx2YD391/7rGOh3cn4wACrKmR4JSrEpj/wd50+hnefYXrgAAACV0RVh0ZGF0 ZTpjcmVhdGUAMjAxOS0xMS0wNlQwMDoxNToxNyswMzowMAkZSo8AAAAldEVYdGRhdGU6bW9kaWZ5 ADIwMTktMTEtMDZUMDA6MTU6MTcrMDM6MDB4RPIzAAAAAElFTkSuQmCC"
+                />
+              </svg>
+              <h3>better design</h3>
+            </div>
+            <div class="description__two">
+              <svg
+                class="description__two-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <image
+                  class="description__two-img"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEMAAABFCAMAAAAmTatcAAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACUlBMVEX1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb///8Hg7J2AAAAxHRSTlMACCtOcJS11LASQWiSu+P+PSNWh8EVUIW57k8lYJ3X2wJY nOFtATTO/fMPBkWV5DmY7ToefdqxeF0fw1ngbjPH+RsJiPvT6MQos7RzU7iNX7J0VOaOZepKekg4 wCCm9twYyIAaeRb0+FXf8EAq5/fsNyRhxfHJS0KuEFt+0bqaZwXKNReE+jz8zwzepNWvkBEEIXHy 75bZiyy9CrdDb6hERtgDC1w/gy+pe6sZHaGX68Ynkwei9YrdDeWegaPMmXcmm2bN9eWx6AAAAAFi S0dExWMLK3cAAAAHdElNRQfjCwYALSr1Lj54AAADSElEQVRYw6XX+T8UYRwH8O/mKtUOybHkzK5l XZGkqEk2pHTrUOkgRyVFdCdiE5UiUenUpfsQ3annD2t2VJ6ZeY5hPz94zc73ed777OPZZ54FmHwM U9zcPTy9pk6u9zTv6TNmGgUkx2fC3X1n+XkaEZbZE+ruHxAYZELqBOvuHzInNAyREh6h7/0jo+Yi WqL5/c2WwBgroic2jgPY4hMSETtRbCEpeR7iJoUBpM5P4wMIhdEF7wVWPQJC6bRZWBijD0BIyCAL 0bxpxLKI+K9cnKlfQCiLQCxZyukkKl5Zl2mE7OU5TCDHvkI51bkaIs/OFKz5K9VvUaAmVsUyidWF 2hWXpyLcmSsicc1a7c00FbGOJQih6zcQbm9UEptYRNHmLQLp/lYFsU1kEMXbdxDv78zGCUMJg/DY tZtcCFIMYw9dsGbt9aKUSnGibB+VKK/wraTVfHAjkEpU7T9wkFarNuBL/BCVqDlspNWU39kjVCLJ P5w+U364UUtpVJcSd5ROoHqMyBDIbcQG8zEGYT2OGQXkNsIJOMkg0Cn8o5wmt0mHeoFlnMHXaDWx SRSEVLEIdBYzaogtam2N55gEasKMaFIDYzOcZxMt+ApLIDQQm6DVwTYu8KbUHdousgnUjhsd2vol M1zmEMqHZJGmnHkFLA6ega9SqFNXrd7QyX/gXsUNTbUQ4BqX6DLjhnr/sRvAv5trKJ9wqs3DYQG4 ziVUj4UeZfEGQG8O33BTGH2KWslNgFt8orxNYSgHfhuglU8g1TG/H6/dkW4U6zAClMZdrNQlnUnu 6SDuP1AaD1vGa87zRK4OYwBUGd+SS2wAj3QQHZ1q4/H/WgV9Z8TjSFIT8ORfrVZavxYdwygEbf6u MsF59H7KJ/psBOPZWG1QunzewiXsxB8bZfIBRvRVzA0tPS+AmJfO4ivpwvCaR7wpIxPwVtq1xFTp YoAjCO/eAy0fEEoG/voKjwd6UofkYfQyBVOBDVgplYfxkSEM948AO43N0p+ITzSg+3NDBOgK+Rtb 1/clpVMfIOWrs8tQpcl5cBdNicPf8r//CPipcwBjGZF3+NGJdNEkUh76L5eMQdlY4gqRLf8EEm2u GMHyMH679FFGZaN9Ml3/AJkxF8o+Kq59AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTExLTA2VDAw OjQ1OjQyKzAzOjAwYpbHDgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0xMS0wNlQwMDo0NTo0Misw MzowMBPLf7IAAAAASUVORK5CYII="
+                />
+              </svg>
+              <h3>customise</h3>
+            </div>
+            <div class="description__three">
+              <svg
+                class="description__three-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <image
+                  class="description__three-img"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABFCAMAAADEkbAlAAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACTFBMVEX1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1 xQb///9OYYGIAAAAwnRSTlMAp3Ydgv3AZBAw+K5SB9rvnEACiOKKLjTTeB4B3/nBZhKN+sj+r1QI OZjz8J5C5PVu4YyS8U7F1HofPzehwmjo6iv8sVYJl+YkTPKfRAMs3eUyBOzbHBTWfCGdFQWaxGoT SdERb7JYBskPRqCiwwooj7vXfSO0lcZrqKtaU+1IC6yQtrVZhg1icjxeINJfDKS3h2Nc9/s455m8 zZEYMYD2iTPjhRqBpXNwy455JZabfiqD2TVLOhvpPpN1Nu4vSiknJlGgU3QAAAABYktHRMOKaI5C AAAAB3RJTUUH4wsGAQIFTSFRewAAA19JREFUWMOt1+dfEzEYB/CAolCQqSLWKq3VChWKMmRZRqsg AiJbAQeopYAoQkFBEQcq4l6Iighu3ANxj/xl3mp7I7lLW553ze/Jt3e5XvMJ8POfA3yuuTBg3vxA H5EgSJUqOGSBT0ooZCosPCLSeyQKOmvhosXeItGQV0tilnqFqJdRkzUuJmD5ilgvFC01VbdS774c 1arVBk+RNfRETVw8/7aMaxM8W+bIRHqaKWkdFFTi+iBPlGRmUkpqGhTVhvQMYiSTu4WsbLEC9RvN hMscmcPOyM3zz5cwUGOxbiJRNnP9BYVbiiCijFuLSxSRYtdvNqN0G0RWmXa7AlJe4eytrKpeDjFV U7tDVtnp7qyrb8ApUL9r9x48stfd2NgE9uVjGajbfwC3zLYwd1uzHbSEQZkqam1BL3Mbr+lgOzgU CmWr4HA0Aknlt3QYQFMHVKgjnV1ixCD4fThsoLxbSYH6nqN1QuWYIO+lbtqsU2SgztHXzkOOC9M2 Skk4oaxAGN/W71rmkyZh1qAGoKuGRIEw23UpA6LkFDVmP01inHHvNmfF2SA1WKJVNiw296KcU4nT Tnr4vEbBCLbxn49Fkl+gh4dyZY3eesFDvihp0Jvp8eFLMoaf6AUI1EmVy3RwxYI1rkpeomvSpnwr HURexxit0hfxBqJNk8pEN2+hjHDE1lR9G6W0MNmdEWl0V436PxhFfZ0pk8mq7omDbqQBzMgbT8li 34te4fB9tAEeBCAV4xiTqh/y9nyoBbjC/NHn5rGxddw19AhrgCTMoywoZPOJSW7gMd4AVXqMMslt 7E+amY9PgVz1YBBqU2MbDM+oD7WyBniOQ6hNje1Qp+tj5A0wjEVgYyzX8wIo1Uu8Qm1q9JVMORSR V3iE3tSAOhkqI69lEDhqUL+BBAholFMcbyER8g4qFQHyfjYQoLhhkSAfZgMJQk/VWYM9QEAlytCE APtHD5AolEH/X5eayJFPUkP1mUn6yBHmECWo8X4uSiZGwJTIMLU4E1saMTItMhLc0ZcZUoQ9RDkr /is/i8gnRMA3nlE0JMy+kyKZbsM4LV72AUKkJMdl/JCEdi0ZAuI44+cEIiQ97XKHqIoxwn5ksYeo 3F++GOwhaqbUNwP8hnDkj48GsBnL/vpqADD4z5Pu/2GgwxjiTnasAAAAJXRFWHRkYXRlOmNyZWF0 ZQAyMDE5LTExLTA2VDAxOjAyOjA1KzAzOjAwrOhGBAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0x MS0wNlQwMTowMjowNSswMzowMN21/rgAAAAASUVORK5CYII="
+                />
+              </svg>
+              <h3>its free</h3>
             </div>
           </div>
-          <div class="video">
-            <video src="#" poster="./assets/images/monkey.jpg" height="232"></video>
-            <button class="bigButtonPlay">
-              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="31" viewBox="0 0 19 33.969">
-                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-              <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                    <rdf:Description rdf:about=""/>
-                  </rdf:RDF>
-              </x:xmpmeta>
-              <?xpacket end="w"?></metadata>
-              <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #f5f4f2;
-                      fill-rule: evenodd;
-                    }
-                  </style>
-                </defs>
-                <path class="cls-1" d="M418.011,317.116a2.109,2.109,0,0,1,3.594-1.464l14.79,14.822A1.959,1.959,0,0,1,437,332a2.007,2.007,0,0,1-.605,1.464l-14.79,14.878a1.906,1.906,0,0,1-2.307.445,1.981,1.981,0,0,1-1.287-1.96V317.116h0Z" transform="translate(-418 -315.031)"/>
-              </svg>
-            </button>
-          </div>
-          <div class="twitter">
-            <svg xmlns="http://www.w3.org/2000/svg" width="163" height="133" viewBox="0 0 163 133">
-              <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                  <rdf:Description rdf:about=""/>
-                </rdf:RDF>
-            </x:xmpmeta>
-            <?xpacket end="w"?></metadata>
-            <defs>
-                <style>
-                  .cls-3 {
-                    fill: #bc7d00;
-                    fill-opacity: 0.9;
-                    fill-rule: evenodd;
-                  }
-                </style>
-              </defs>
-              <path id="twitter" class="cls-3" d="M1075,962.313l-15.28,15.313v2.552a33.052,33.052,0,0,1-1.1,8.069c-0.36,21.063-7.06,49-34.56,71.053-54.1,43.37-112.061,5.1-112.061,5.1,45.844,0,45.844-15.31,45.844-15.31-10.188,0-30.563-20.42-30.563-20.42,5.094,5.1,15.282,0,15.282,0-25.47-15.31-25.47-30.626-25.47-30.626,5.094,5.106,15.282,0,15.282,0-25.469-20.418-10.188-45.941-10.188-45.941,5.094,25.523,71.313,35.732,71.313,35.732l0.842-.423a60.7,60.7,0,0,1-.842-9.786C993.5,959.3,1008.32,947,1026.61,947a32.857,32.857,0,0,1,25.04,11.7l2.97-1.49L1069.91,947l-10.19,20.418Z" transform="translate(-912 -947)"/>
-            </svg>
-            <span>22</span>
-            <button>
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
-                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-              <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                    <rdf:Description rdf:about=""/>
-                  </rdf:RDF>
-              </x:xmpmeta>
-              <?xpacket end="w"?></metadata>
-              <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #fff;
-                      fill-rule: evenodd;
-                      opacity: 0.7;
-                    }
-                  </style>
-                </defs>
-                <path class="cls-1" d="M466,1104h-4v4h-3v-4h-4v-3h4v-4h3v4h4v3Z" transform="translate(-455 -1097)"/>
-              </svg>
-            </button>
-            <div class="messages">
-              <p class="messageOne">Daily Mobile UI Design Inspiration #1
-                via @cssauthor</p>
-              <p class="messageTwo">Daily Mobile UI Design Inspiration #1
-                via @cssauthor</p>
-              <p class="messageThree">Daily Mobile UI Design Inspiration #1
-                via @cssauthor</p>
-              <form action="index.php" method="POST">
-                <input type="text" maxlength="20">
-                <input type="submit" value="Tweet">
-              </form>
-            </div>
-          </div>
-        </section>
-        <div class="swipeLine">
-          <div class="place">
-            <!--Нижний swipe line в интерактиве-->
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="beforeFooter">
-      <div class="wrapper">
-        <h3>Lorem ipsum dolor sit amet</h3>
-        <div class="devicePlusUl">
-          <div class="devices">
-              <img src="./assets/images/desktop.png" alt="Desktop" class="desktop">
-              <img src="./assets/images/tablet.png" alt="Tablet" class="tablet">
-              <img src="./assets/images/mobile.png" alt="Mobile" class="mobile">
-              <div class="sale">
-                <p>its 100% free</p>
+        <div class="interactive">
+          <div class="wrapper">
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <section>
+              <div class="interactive__note">
+                <p>
+                  Lorem ipsum dolor sit amet, consecte&shy;tur adipisicing elit,
+                  sed do eiusmod tempor inci&shy;didunt ut
+                </p>
+                <button class="button-add"></button>
+                <div class="interactive__date">
+                  <p><span>25</span>april</p>
+                </div>
+              </div>
+              <div class="interactive__video">
+                <video
+                  src="#"
+                  poster="./assets/images/monkey.jpg"
+                  height="232"
+                ></video>
+                <button class="button-play">
+                  <svg
+                    class="button-play-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="19"
+                    height="34"
+                  >
+                    <image
+                      class="button-play-img"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAiCAMAAACKqBL2AAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAdVBMVEX19PL19PL19PL19PL1 9PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL1 9PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL19PL///+D8W+VAAAAJXRS TlMARNnvcOB6eXd2dXRzcnFn6+T8VlxeYP1h/mJjZWlrbdtvPM7s5sj7bQAAAAFiS0dEJloImLUA AAAHdElNRQfjCwYAHgND98MkAAAAi0lEQVQoz23S2RaCMAwE0LoibmDBJaLiwvz/L2qPepTM5PG+ NJ1JGAxH4+BmAmDqDGkyYQ7fhpmwHn4NuTDMhf3wz7AQhqWwD/YNK2FYC0tIhkJYKWzDFiuyWNMb iZzFLe0cd/S3/YEysCNlZQ1laifK3grqyM7UpV2oc2vpNhyF64tu7tbuj65x9ARKDTasjNm/2AAA ACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0xMS0wNlQwMDozMDowMyswMzowMI+5HIcAAAAldEVYdGRh dGU6bW9kaWZ5ADIwMTktMTEtMDZUMDA6MzA6MDMrMDM6MDD+5KQ7AAAAAElFTkSuQmCC"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="interactive__twitter twitter">
+                <img
+                  class="twitter-img"
+                  src="./assets/images/svg/twitter.svg"
+                  alt="twitter"
+                />
+                <span>22</span>
+                <button class="button-add"></button>
+                <div class="interactive__messages messages">
+                  <p class="message-one">
+                    Daily Mobile UI Design Inspiration #1 via @cssauthor
+                  </p>
+                  <p class="message-two">
+                    Daily Mobile UI Design Inspiration #1 via @cssauthor
+                  </p>
+                  <p class="message-three">
+                    Daily Mobile UI Design Inspiration #1 via @cssauthor
+                  </p>
+                  <form action="index.php" method="POST">
+                    <input type="text" maxlength="20" />
+                    <input type="submit" value="Tweet" />
+                  </form>
+                </div>
+              </div>
+            </section>
+            <div class="swipe-line">
+              <div class="place">
+                <!--Нижний swipe line в интерактиве-->
               </div>
             </div>
-            <ul class="ul">
-              <li>Sed ut perspiciatis unde omnis</li>
-              <li>Lorem ipsum dolor sit amet, con&shy;sectetur adipisicing </li>
-              <li>Sed ut perspiciatis unde omnis</li>
-              <li>Lorem ipsum dolor sit amet, con&shy;sectetur adipisicing </li>
-            </ul>
+          </div>
         </div>
-      </div>
+        <div class="devices-wrap">
+          <div class="wrapper">
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <div class="device-center">
+              <div class="devices-wrap__devices devices">
+                <img
+                  src="./assets/images/desktop.png"
+                  alt="Desktop"
+                  class="devices__desktop"
+                />
+                <img
+                  src="./assets/images/tablet.png"
+                  alt="Tablet"
+                  class="devices__tablet"
+                />
+                <img
+                  src="./assets/images/mobile.png"
+                  alt="Mobile"
+                  class="devices__mobile"
+                />
+                <div class="devices__sale">
+                  <p>its 100% free</p>
+                </div>
+              </div>
+              <ul class="devices__list">
+                <li>Sed ut perspiciatis unde omnis</li>
+                <li>
+                  Lorem ipsum dolor sit amet, con&shy;sectetur adipisicing
+                </li>
+                <li>Sed ut perspiciatis unde omnis</li>
+                <li>
+                  Lorem ipsum dolor sit amet, con&shy;sectetur adipisicing
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="wrapper">
+          <a class="logo" href="">
+            <svg class="logo-svg">
+              <image
+                class="logo-svg-img"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAABTCAMAAADUbMsyAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACMVBMVEX1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQb1xQYAAADn+b1cAAAAuXRSTlMAho0BjAKWlQ4yJJwDC2tLHn83owhogE88qQYFB2RTQ7FgWki3CVxdTbwKYlLDDcLIEGy9zRPJcRppitEsxXcXgf6HenlzfbV4zv2uddUP0xS4q/wWvqeoKxEYIiESJ6T6+xwzTE5VWF5jZm1v5IihzDjnnvDmPumLbkJl62Htj5GQ79bl8pPQftTE87OEtLa5nfm/m5qswfiq7PeO9vWt9KLx0ltncCqfx6Wyr8Z7lHxR7j1ZGQRyhRA8xeIAAAABYktHRLqjsUfaAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wkUFgYbSvvQnQAABodJREFUWMOtmYtbUzcUwK9cYTDaCgpxlocVWqVVRFAm4KgUHwgoAh0i6tYi0zEcqIgDFSnqwIlzTLepKCLqfG2oe7rlv1uS+zi5t7dX0m/5Pmhykvx6m5PzSK4k2ZQlSfS8q+AU2VIuL8XCrFSNidOsoPJ7mDHTMwSY72doTJzpiOt1ZGLGdLqWCTCzspdrTLzCDHWswIyZk4tWijAR+kBj4lVuQ1/eKiaV8gsQKhRjotUaE3t4qNujCPPWkDFFgkxULKtM7PXpPT6vKltLh6wTZaKSVHU+9gfUjoBfE7ER64WZaIMGwKXpTL6xDBuYueJMpBPwpnIiLt+EjcyKJJibgbGlUqrcAs0PWf9WAWaVyqyuAcq2j7ZBo1bpDwowt2tMqQ44IajWq/07kmJKO3F82Smp/Sg5phQMmYihXZK0Wx2QJ850kbq7wQgNUeGeOmWAT5zZSK0SeZp4ZDMdsHefMqBFnIk9+YSJmps4JF1D935lf6LWJJi4LUD10R5WkU3tdA0DXnXPo+2LZ34MdtThpJUDCjTcSeo5zg7NjtDBrq6uQ1VaOUzKEYvAkOcr/6TqU842S9lmjERJtTtCq0dLdduML9lqhOj57Njxz3u/6DvxZXCHcQR7uP4BWj0ZxdGTtDJwCtswT6uPtrEiwQDVhwzW0PqZoTP0o+YstmF+pf9eZ64tEw+P0MY5+m9kGNswz3OL6Ltgy8SjKdSoyF/KKLZhFhs0k3/RlonHYsSpIxQbwzbMYyaV562zYoJVDo2jXnTpMrZhFqbqtCWcM6dddVdA8DVAJyaLJifAnM5Cz9XcPlL8MGtAkmIGV/tNMHgNpk6F9fr1ket6PTwFyG9ZpB4ASIw05TRo36BL4m6Dyd8BFEp4GqTf51MkF7mUDEu+CZKdVBDogOmdt+KQtw4A8gcWpTnHfVNVlCMCMha2nFMA+NH8pN0/wddMOenwXdAZ0bMrRzssIXG5Dt9RCJHdtd1GZC18ST/zBZzTbucSNi0LotDbzKoHdUH0TpRDRsugNcg8gQeQhsxKcnsB2szsehgw/rt6/a4fkMPMD3AO22vMAKUA5AehGWbZ9wDkva/W7k8D/h7zAjOA1LMqgJZyyqajZ8EQ73oesM8Hnvu6bGyWDuqExS2NQ0pSC2RDYeZ8Y0O6YO7hPPk//3BOlwzF6JAIIDdZxrsWTtmP6Izxx7pgvnMCT3TO6+3H46qj1sqWBCG09QnohTngSTDHicipCNj7/CRz04B80pooth2EbXHZtb6v9+dZ2ERXA43QmC3qvfD0Gbip0PNESP45X9g+53X2nC+456y0RnLrGTWv5xxbT1CRsp6PwMROWa5n+kvQ+y9sM8Fvm7vN9H6b0/usSe8v0+ORAcjVlf2Zwu9PBfbgV9jyYymm/VkWv+X9eidNYIgdjQIS7MgL0FFmR+2gVrMduacBuSBk7wsAnTa6kAXYFh46sv4sIMsMfumO2S81A3SBgzpmADnNkP2wuK94JDGxV5yys3wkU3YBdAZc8gqYEpSN/uRWptElky/JBD+v+I2t0KmdouVMkL1m+npHPOKU3cGgr6FTiUfyG5DUscXl4ua0ZdxsAGkbW8Ib0PmGQjmbrmFILo7w8X0pF99rYQmv7Q3+hlAtQGYNechmmlDkgoWGBhPnITDrCjuDcEdRuNORf7fJwZR8aRycdMgqvVprOi7JJXZ53R+LyesQWpNvYBb/D/knQgX8Iey8Xf6p5MknmBewzZMReurUkX8iG6Yxnx+0ZSLXRhW5HNkwG03njn4L5uvgs3N9Bb1/HV9Z0qMgM7JtmKVHaS1CLTTKQnQ9fz56XlXZ5TOlH0zlR9gBTD+O/d3VdVBndjhzkPEch7hznMjh8JDGJOfNt8TxaglMmLprKdCWDLNVZe6nG473kE3N9HKBmK84s0WZsW8vbTzkLwWaPOyw3SjO9Ckz6vaQerXpnqHhLRG6xJludcpuSfon7j6E3gBVizP1ixnZ+t4mKaZ26P6Xez6o1iXFDCpT4PxhvAcb0JhVAsytbAbnaE33dX6VmSXArOD9Ek50ryjGrDYy1fvPdMipNogz1xuYfs0rQlaVWiLM7KUT1qnzre6TJblYlFlExl/MU6Zb3nuT6mpBZiGJLfnKvXe70T26ZzQmjQ4izJUoN0e5n48keo9AyulsEeYyF1ULtn3fQUrPYQFmBts8id7LpGlMKXXxSLXgWIL3RzHx90daGUjYY/ue6z/cTTd7Gy/ClAAAAABJRU5ErkJggg=="
+              />
+            </svg>
+            <span class="logo-theyalow">theyalow</span>
+          </a>
+        </div>
+      </footer>
     </div>
-  </main>
-  <footer>
-    <div class="wrapper">
-      <div class="logo">
-          <a href="#" class="logo-footer-for-desktop"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="54" viewBox="0 0 54 54">
-            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-          <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-              <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                <rdf:Description rdf:about=""/>
-              </rdf:RDF>
-          </x:xmpmeta>
-
-          <?xpacket end="w"?></metadata>
-          <image id="logoImg" width="54" height="54" xlink:href="data:img/png;base64,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"/>
-          </svg></a>
-          <a href="#" class="logo-footer-for-mobile"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="31" viewBox="0 0 31 31">
-            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-          <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-              <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                <rdf:Description rdf:about=""/>
-              </rdf:RDF>
-          </x:xmpmeta>
-
-          <?xpacket end="w"?></metadata>
-          <image id="logoImg" width="31" height="31" xlink:href="data:img/png;base64,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"/>
-          </svg></a>
-          <h2><a href="#">theyalow</a></h2>
-      </div>
-    </div>
-  </footer>
-</body>
+  </body>
 </html>
