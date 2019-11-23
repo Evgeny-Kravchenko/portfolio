@@ -1,13 +1,14 @@
 :root {
   --gray: #797474;
   --white: #ffffff;
-  --light-gray: #ada6a6;
+  --light-gray: #ececec;
   --dark-gray: #535151;
-  --green: #236e3c;
+  --green: #048830;
   --red: #ff0000;
   --orange: #ec9e03;
   --gray-opacity: rgba(255, 255, 255, 0.3);
   --green-opacity: rgba(50, 160, 100, 0.5);
+  --purple: rgb(205, 75, 245);
 }
 
 html {
@@ -36,6 +37,7 @@ body {
   min-width: 200px;
   border: 10px solid var(--gray);
   overflow: hidden;
+  box-shadow: 1px 1px 5px #000000;
 }
 
 .header__photo img {
@@ -52,6 +54,7 @@ body {
   padding: 10px 30px;
   color: var(--white);
   text-align: center;
+  box-shadow: 1px 1px 5px #000000;
 }
 
 .contact {
@@ -108,6 +111,7 @@ body {
   flex-direction: column;
   background-color: var(--gray);
   margin-top: 20px;
+  box-shadow: 1px 1px 5px #000000;
 }
 
 .links__name {
@@ -137,11 +141,19 @@ body {
 .list__link {
   color: var(--green);
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .list__link:hover {
-  color: var(--white);
+  color: var(--purple);
+}
+
+.education {
+  box-shadow: 1px 1px 5px #000000;
+}
+
+.slider {
+  box-shadow: 1px 1px 5px #000000;
 }
 
 @media screen and (max-width: 920px) {
