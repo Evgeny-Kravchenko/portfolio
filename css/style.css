@@ -95,6 +95,14 @@ body {
   background: url('../img/sprites-social-networks.png') no-repeat -170px;
 }
 
+.sprite a {
+  transition: 0.2s;
+}
+
+.sprite a:hover {
+  transform: scale(1.2) rotate(360deg);
+}
+
 .links {
   display: flex;
   flex-direction: column;
