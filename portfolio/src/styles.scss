@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./assets/scss/modules/fonts";
+@import "./assets/scss/utils/variables";
+
+html {
+  font-size: $font-xs;
+}
+
+body {
+  font-family: $primary_font;
+  font-size: $primary-fs;
+  font-weight: $regular;
+}
+
+a {
+  cursor: pointer;
+}
