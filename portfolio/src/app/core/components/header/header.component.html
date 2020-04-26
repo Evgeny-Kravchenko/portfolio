@@ -1,1 +1,12 @@
-<p>header works!</p>
+<header class="header">
+  <h1 class="logo">
+    Portfolio <span class="logo-descr">Software engineer</span>
+  </h1>
+  <nav class="navigation" [class.isNavShown]="isNavShown">
+    <a routerLink="#" class="link-item" [class.active]="true">Home</a>
+    <a routerLink="#" class="link-item">About me</a>
+    <a routerLink="#" class="link-item">Works</a>
+    <a routerLink="#" class="link-item">Projects</a>
+  </nav>
+  <button class="nav-switcher" [class.btn-switch]="isNavShown" (click)="isNavShown = !isNavShown"></button>
+</header>

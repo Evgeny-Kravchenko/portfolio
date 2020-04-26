@@ -1,5 +1,5 @@
-@import "./assets/scss/modules/fonts";
-@import "./assets/scss/utils/variables";
+@import "fonts";
+@import "variables";
 
 html {
   font-size: $font-xs;
@@ -9,8 +9,17 @@ body {
   font-family: $primary_font;
   font-size: $primary-fs;
   font-weight: $regular;
+  margin: 0;
+  padding: 0;
+  background-image: url('src/assets/images/wood-bg.jpg');
 }
 
 a {
+  cursor: pointer;
+}
+
+button {
+  border: 0;
+  outline: 0;
   cursor: pointer;
 }
