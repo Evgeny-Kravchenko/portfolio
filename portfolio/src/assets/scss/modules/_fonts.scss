@@ -18,12 +18,30 @@
 }
 
 @font-face {
+  font-family: 'Arial';
+  src: url('~assets/fonts/Arial/Arial-Black.woff2') format('woff2'),
+  url('~assets/fonts/Arial/Arial-Black.woff') format('woff'),
+  url('~assets/fonts/Arial/Arial-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Cambria';
   src: url('~assets/fonts/Cambria/Cambria.woff2') format('woff2'),
   url('~assets/fonts/Cambria/Cambria.woff') format('woff'),
   url('~assets/fonts/Cambria/Cambria.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cambria';
+  src: url('~assets/fonts/Cambria/Cambria-Italic.woff2') format('woff2'),
+  url('~assets/fonts/Cambria/Cambria-Italic.woff') format('woff'),
+  url('~assets/fonts/Cambria/Cambria-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {

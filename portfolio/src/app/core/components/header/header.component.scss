@@ -7,8 +7,10 @@
   justify-content: space-between;
   max-width: 1024px;
   margin: 0 auto;
-  padding: 0 0 10px 10px;
+  padding: 0 20px;
+  box-sizing: border-box;
   background-color: $white;
+  z-index: 5;
 }
 
 .logo {
@@ -28,7 +30,7 @@
 .navigation {
   display: flex;
   justify-content: space-between;
-  width: 350px;
+  width: 300px;
   align-items: stretch;
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -69,12 +71,13 @@
   background-color: $dull-green;
   border-radius: 5px 0 0 5px;
   transition: 0.5s;
+  z-index: 10;
 }
-
 
 @media screen and (max-width: 500px) {
   .header {
     position: static;
+    padding-bottom: 30px;
   }
 
   .nav-switcher {
@@ -99,6 +102,13 @@
     flex-direction: column;
     width: 80px;
     transition: 0.5s;
+    background-color: $dark-gray-opacity;
+    border-bottom-left-radius: 5px;
+    z-index: 10;
+
+    :last-child {
+      border-bottom-left-radius: 5px;
+    }
   }
 
   .link-item {
