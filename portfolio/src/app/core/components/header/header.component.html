@@ -1,13 +1,12 @@
 <header class="header">
   <h1 class="logo">
     <a (click)="goTo('/home')"
-      >Portfolio <span class="logo-descr">Software engineer</span></a
+      >Kravchenko Evgeny <span class="logo-descr">Software engineer</span></a
     >
   </h1>
   <nav class="navigation" [class.isNavShown]="isNavShown">
     <a (click)="goTo('/home')" class="link-item" [class.active]="statePages['home']">Home</a>
     <a (click)="goTo('/about-me')" class="link-item" [class.active]="statePages['about-me']">About me</a>
-    <a (click)="goTo('/works')" class="link-item" [class.active]="statePages['works']">Works</a>
   </nav>
   <button
     class="nav-switcher"

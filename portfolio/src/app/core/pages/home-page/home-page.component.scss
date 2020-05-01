@@ -2,7 +2,9 @@
 
 .wrapper {
   max-width: 1024px;
+  min-height: 100%;
   margin: 0 auto;
   padding-bottom: 100px;
   background-color: $white;
+  overflow: hidden;
 }

@@ -1,0 +1,14 @@
+<section class="works">
+  <h2 class="block-name">My works</h2>
+  <mat-tab-group>
+    <mat-tab label="All">
+      <app-item-work *ngFor="let work of works" [work]="work"></app-item-work>
+    </mat-tab>
+    <mat-tab label="Template">
+      <app-item-work *ngFor="let work of works" [work]="work"></app-item-work>
+    </mat-tab>
+    <mat-tab label="JS"> Here will be replaced works where was used JavaScript </mat-tab>
+    <mat-tab label="Angular"> Here will be replaced Angular projects </mat-tab>
+    <mat-tab label="NodeJS"> Here will be replaced Node js projects </mat-tab>
+  </mat-tab-group>
+</section>

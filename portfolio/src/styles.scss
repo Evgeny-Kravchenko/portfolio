@@ -11,7 +11,7 @@ body {
   font-weight: $regular;
   margin: 0;
   padding: 0;
-  background-image: url('src/assets/images/wood-bg.jpg');
+  background-image: url("src/assets/images/wood-bg.jpg");
 }
 
 a {
@@ -22,4 +22,40 @@ button {
   border: 0;
   outline: 0;
   cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-tab-body {
+  padding: 20px;
+  overflow: visible !important;
+}
+
+.mat-tab-labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mat-tab-body-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  overflow: visible !important;
+}
+
+.mat-tab-label-content {
+  font-family: "Cambria", sans-serif;
+  font-size: 2rem;
+}
+
+.mat-tab-body-wrapper {
+  overflow: visible !important;
 }

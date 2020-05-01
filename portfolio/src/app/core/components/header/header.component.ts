@@ -24,7 +24,7 @@ export class HeaderComponent implements OnInit {
 
   public ngOnInit(): void {
     this.isNavShown = false;
-    this.statePages = { home: true, 'about-me': false, works: false };
+    this.statePages = { home: true, 'about-me': false };
   }
 
   public goTo(path): void {

@@ -2,12 +2,23 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import { HammerModule } from '@angular/platform-browser';
 import { DescriptionComponent } from './components/description/description.component';
+import { WorksComponent } from './components/works/works.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatCardModule } from '@angular/material/card';
+import { ItemWorkComponent } from './components/item-work/item-work.component';
+import { WorksService } from './services/works.service';
 
 @NgModule({
-  declarations: [HeaderComponent, HomePageComponent, DescriptionComponent],
-  imports: [CommonModule, HammerModule],
-  exports: [HeaderComponent, HammerModule],
+  declarations: [
+    HeaderComponent,
+    HomePageComponent,
+    DescriptionComponent,
+    WorksComponent,
+    ItemWorkComponent,
+  ],
+  imports: [CommonModule, MatTabsModule, MatCardModule],
+  exports: [HeaderComponent, MatTabsModule, MatCardModule],
+  providers: [WorksService],
 })
 export class CoreModule {}

@@ -1,0 +1,13 @@
+<mat-card class="work-item">
+  <mat-card-header>
+    <div mat-card-avatar class="work-avatar"></div>
+    <mat-card-title>{{ work.title }}</mat-card-title>
+    <mat-card-subtitle>Type: {{ work.type }} </mat-card-subtitle>
+  </mat-card-header>
+  <img src="{{ work.imageSrc }}" alt="the yellow" class="project-image" />
+  <mat-card-content>
+    <p class="project-description">
+      {{ work.description }}
+    </p>
+  </mat-card-content>
+</mat-card>
