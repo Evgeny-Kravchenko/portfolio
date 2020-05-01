@@ -1,6 +1,6 @@
 <mat-card class="work-item">
   <mat-card-header>
-    <div mat-card-avatar class="work-avatar"></div>
+    <div class="work-avatar" mat-card-avatar [ngStyle]="{backgroundImage: 'url(assets/images/technology-avatars/' + work.type + '.png)'}"></div>
     <mat-card-title>{{ work.title }}</mat-card-title>
     <mat-card-subtitle>Type: {{ work.type }} </mat-card-subtitle>
   </mat-card-header>

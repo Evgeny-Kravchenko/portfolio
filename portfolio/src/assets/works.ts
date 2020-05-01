@@ -17,21 +17,21 @@ export const works: Array<IWorkItem> = [
   },
   {
     title: 'Culture portal',
-    imageSrc: './assets/images/projects-image/repair-design-project.jpg',
+    imageSrc: './assets/images/projects-image/culture-project.jpg',
     description:
       'This project supports responsive web design. Resizing the screen does not spoil the page design. This page supports 3 browsers: Google Chrome, Mozilla Firefox, Microsoft Edge. Here was used the toolkit for automating painful or time-consuming tasks "Gulp" and preprocessor "Sass".',
     type: 'Angular',
   },
   {
     title: 'Youtube client',
-    imageSrc: './assets/images/projects-image/repair-design-project.jpg',
+    imageSrc: './assets/images/projects-image/youtube-client.png',
     description:
       'This project supports responsive web design. Resizing the screen does not spoil the page design. This page supports 3 browsers: Google Chrome, Mozilla Firefox, Microsoft Edge. Here was used the toolkit for automating painful or time-consuming tasks "Gulp" and preprocessor "Sass".',
     type: 'Angular',
   },
   {
     title: 'Piskel clone',
-    imageSrc: './assets/images/projects-image/repair-design-project.jpg',
+    imageSrc: './assets/images/projects-image/piskel-clone.png',
     description:
       'This project supports responsive web design. Resizing the screen does not spoil the page design. This page supports 3 browsers: Google Chrome, Mozilla Firefox, Microsoft Edge. Here was used the toolkit for automating painful or time-consuming tasks "Gulp" and preprocessor "Sass".',
     type: 'Angular',
@@ -44,7 +44,7 @@ export const works: Array<IWorkItem> = [
   },
   {
     title: 'NodeJS',
-    imageSrc: './assets/images/projects-image/weather.jpg',
+    imageSrc: './assets/images/projects-image/nodeJS.jpg',
     description: '',
     type: 'NodeJS',
   },

@@ -1,26 +1,27 @@
 @import "variables";
+@import "keyframes";
 
 :host {
   margin-bottom: 50px;
 }
 
 .work-item {
-  max-width: 280px;
+  max-width: 270px;
   height: 100%;
-  background-color: #fff;
-  margin-bottom: 25px;
+  background-color: $white;
+  margin: 25px 13px;
   cursor: pointer;
-  transition: 0.2s;
 
   &:hover {
-    transform: scale(0.98);
+    animation-name: hover-card;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
   }
 }
 
 .work-avatar {
   background-color: $dark-gray-opacity;
-  background-image: url("src/assets/images/technology-avatars/html-css-avatar.png");
-  background-size: 30px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }

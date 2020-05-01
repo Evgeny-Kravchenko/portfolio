@@ -36,7 +36,8 @@
             "stylePreprocessorOptions": {
               "includePaths": [
                 "src/assets/scss/utils/",
-                "src/assets/scss/modules/"
+                "src/assets/scss/modules/",
+                "src/assets/scss/base/"
               ]
             },
             "scripts": []
