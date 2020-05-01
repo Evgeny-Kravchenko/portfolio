@@ -9,6 +9,12 @@
   height: 100%;
   background-color: #fff;
   margin-bottom: 25px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(0.98);
+  }
 }
 
 .work-avatar {

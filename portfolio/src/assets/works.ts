@@ -46,6 +46,6 @@ export const works: Array<IWorkItem> = [
     title: 'NodeJS',
     imageSrc: './assets/images/projects-image/weather.jpg',
     description: '',
-    type: 'JS',
+    type: 'NodeJS',
   },
 ];

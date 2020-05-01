@@ -5,10 +5,16 @@
       <app-item-work *ngFor="let work of works" [work]="work"></app-item-work>
     </mat-tab>
     <mat-tab label="Template">
-      <app-item-work *ngFor="let work of works" [work]="work"></app-item-work>
+      <app-item-work *ngFor="let work of works | worksFilter:'HTML&CSS'" [work]="work"></app-item-work>
     </mat-tab>
-    <mat-tab label="JS"> Here will be replaced works where was used JavaScript </mat-tab>
-    <mat-tab label="Angular"> Here will be replaced Angular projects </mat-tab>
-    <mat-tab label="NodeJS"> Here will be replaced Node js projects </mat-tab>
+    <mat-tab label="JS">
+      <app-item-work *ngFor="let work of works | worksFilter:'JS'" [work]="work"></app-item-work>
+    </mat-tab>
+    <mat-tab label="Angular">
+      <app-item-work *ngFor="let work of works | worksFilter:'Angular'" [work]="work"></app-item-work>
+    </mat-tab>
+    <mat-tab label="NodeJS">
+      <app-item-work *ngFor="let work of works | worksFilter:'NodeJS'" [work]="work"></app-item-work>
+    </mat-tab>
   </mat-tab-group>
 </section>

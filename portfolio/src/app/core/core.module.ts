@@ -8,6 +8,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { ItemWorkComponent } from './components/item-work/item-work.component';
 import { WorksService } from './services/works.service';
+import { WorksFilterPipe } from './pipes/works-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { WorksService } from './services/works.service';
     DescriptionComponent,
     WorksComponent,
     ItemWorkComponent,
+    WorksFilterPipe,
   ],
   imports: [CommonModule, MatTabsModule, MatCardModule],
   exports: [HeaderComponent, MatTabsModule, MatCardModule],
