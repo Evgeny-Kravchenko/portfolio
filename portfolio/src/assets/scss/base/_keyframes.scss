@@ -1,3 +1,5 @@
+@import "variables";
+
 @keyframes hover-card {
   0% {
     background: #ffffff;
@@ -9,8 +11,8 @@
         135deg,
         rgba(255, 255, 255, 1) 100% - $i,
         rgba(255, 255, 255, 1) 100% - $i,
-        rgba(94,212,102,1) 100% - $i,
-        rgba(94,212,102,1) 100% - $i
+        rgba(94, 212, 102, 1) 100% - $i,
+        rgba(94, 212, 102, 1) 100% - $i
       );
     }
   }
@@ -20,8 +22,56 @@
       135deg,
       rgba(255, 255, 255, 1) 50%,
       rgba(255, 255, 255, 1) 50%,
-      rgba(94,212,102,1) 50%,
-      rgba(94,212,102,1) 50%
+      rgba(94, 212, 102, 1) 50%,
+      rgba(94, 212, 102, 1) 50%
     );
+  }
+}
+
+@keyframes nav-link-active {
+  0% {
+    background-color: $white;
+  }
+
+  @for $i from 1 through 100 {
+    #{$i}% {
+      background: linear-gradient(
+        to bottom,
+        $white 50% - $i,
+        $white 50% - $i,
+        $dull-green 50% - $i,
+        $dull-green 50% + $i,
+        $white 50% + $i,
+        $white 50% + $i
+      );
+    }
+  }
+
+  100% {
+    background-color: $dull-green;
+  }
+}
+
+@keyframes nav-link-disactive {
+  0% {
+    background-color: $white;
+  }
+
+  @for $i from 1 through 50 {
+    #{$i}% {
+      background: linear-gradient(
+          to bottom,
+          $dull-green 50% - $i,
+          $dull-green 50% - $i,
+          $white 50% - $i,
+          $white 50% + $i,
+          $dull-green 50% + $i,
+          $dull-green 50% + $i
+      );
+    }
+  }
+
+  100% {
+    background-color: $white;
   }
 }

@@ -9,6 +9,7 @@ import { MatCardModule } from '@angular/material/card';
 import { ItemWorkComponent } from './components/item-work/item-work.component';
 import { WorksService } from './services/works.service';
 import { WorksFilterPipe } from './pipes/works-filter.pipe';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { WorksFilterPipe } from './pipes/works-filter.pipe';
     WorksComponent,
     ItemWorkComponent,
     WorksFilterPipe,
+    FooterComponent,
   ],
   imports: [CommonModule, MatTabsModule, MatCardModule],
   exports: [HeaderComponent, MatTabsModule, MatCardModule],

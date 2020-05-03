@@ -47,3 +47,13 @@
 .project-description {
   text-align: justify;
 }
+
+@media screen and (max-width: 500px) {
+  .work-item:hover {
+    animation: none;
+  }
+
+  .wrapper-animation:hover {
+    transform: none;
+  }
+}

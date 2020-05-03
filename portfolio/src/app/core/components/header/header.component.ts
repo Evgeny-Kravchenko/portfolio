@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { IStatePages } from '../../models/state-pages';
 
@@ -10,15 +10,6 @@ import { IStatePages } from '../../models/state-pages';
 export class HeaderComponent implements OnInit {
   public isNavShown: boolean;
   public statePages: IStatePages;
-
-  @HostListener('document:touchstart', ['$event']) onTouchStart(event): void {
-    if (
-      event.target.className !== 'link-item' &&
-      !event.target.classList.contains('nav-switcher')
-    ) {
-      this.isNavShown = false;
-    }
-  }
 
   constructor(private router: Router) {}
 
@@ -32,5 +23,10 @@ export class HeaderComponent implements OnInit {
       this.statePages[page] = `/${page}` === path;
     }
     this.router.navigateByUrl(path);
+  }
+
+  public showMenu(): void {
+    document.body.classList.toggle('overflow-hidden');
+    this.isNavShown = !this.isNavShown;
   }
 }

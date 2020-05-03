@@ -7,10 +7,10 @@
   <nav class="navigation" [class.isNavShown]="isNavShown">
     <a (click)="goTo('/home')" class="link-item" [class.active]="statePages['home']">Home</a>
     <a (click)="goTo('/about-me')" class="link-item" [class.active]="statePages['about-me']">About me</a>
+    <button
+      class="nav-switcher"
+      [class.btn-switch]="isNavShown"
+      (click)="showMenu()"
+    ></button>
   </nav>
-  <button
-    class="nav-switcher"
-    [class.btn-switch]="isNavShown"
-    (click)="isNavShown = !isNavShown"
-  ></button>
 </header>
