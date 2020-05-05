@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { IWorkItem } from '../../models/item-work';
 import { WorksService } from '../../services/works.service';
 
@@ -6,6 +6,7 @@ import { WorksService } from '../../services/works.service';
   selector: 'app-works',
   templateUrl: './works.component.html',
   styleUrls: ['./works.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class WorksComponent implements OnInit {
   public works: Array<IWorkItem>;

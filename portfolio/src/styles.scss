@@ -11,7 +11,7 @@ body {
   font-weight: $regular;
   margin: 0;
   padding: 0;
-  background-image: url("src/assets/images/wood-bg.jpg");
+  background-image: url("/assets/images/wood-bg.jpg");
 }
 
 a {
@@ -32,6 +32,16 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+@import "variables";
+
+.wrapper {
+  max-width: 1024px;
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: $white;
+}
+
 
 .mat-tab-body {
   padding: 20px;

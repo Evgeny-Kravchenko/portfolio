@@ -6,7 +6,7 @@
   </h1>
   <nav class="navigation" [class.isNavShown]="isNavShown">
     <a (click)="goTo('/home')" class="link-item" [class.active]="statePages['home']">Home</a>
-    <a (click)="goTo('/about-me')" class="link-item" [class.active]="statePages['about-me']">About me</a>
+    <a (click)="goTo('/about')" class="link-item" [class.active]="statePages['about']">About me</a>
     <button
       class="nav-switcher"
       [class.btn-switch]="isNavShown"
