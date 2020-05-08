@@ -30,6 +30,7 @@ import { MatCardModule } from '@angular/material/card';
   ],
   exports: [
     HeaderComponent,
+    FooterComponent,
     BrowserAnimationsModule
   ],
   providers: [WorksService],
