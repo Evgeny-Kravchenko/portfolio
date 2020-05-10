@@ -1,0 +1,27 @@
+@import "variables";
+@import "keyframes";
+
+.certificates {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 20px 20px 100px 20px;
+}
+
+.certificate-img {
+  width: 250px;
+  transition: 1s;
+  margin: 0 20px;
+
+  &:hover {
+    animation: pulsate-fwd 0.5s ease-in-out infinite both;
+  }
+}
+
+.component-name {
+  text-align: center;
+}
+
+
