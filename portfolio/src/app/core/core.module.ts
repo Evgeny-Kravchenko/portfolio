@@ -28,11 +28,7 @@ import { MatCardModule } from '@angular/material/card';
     MatTabsModule,
     MatCardModule,
   ],
-  exports: [
-    HeaderComponent,
-    FooterComponent,
-    BrowserAnimationsModule
-  ],
+  exports: [HeaderComponent, FooterComponent, BrowserAnimationsModule],
   providers: [WorksService],
 })
 export class CoreModule {}

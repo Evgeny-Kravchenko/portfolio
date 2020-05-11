@@ -1,21 +1,21 @@
 import { Component } from '@angular/core';
-import {
-  animate,
-  state,
-  style,
-  transition,
-  trigger,
-} from '@angular/animations';
+import { slideInAnimation } from './animation';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  animations: [
-    trigger('fade', [
-      state('void', style({ opacity: 0 })),
-      transition(':enter, :leave', [animate(2000)]),
-    ]),
-  ],
+  animations: [slideInAnimation],
 })
-export class AppComponent {}
+export class AppComponent {
+  public isFooterShow: boolean;
+
+  public prepareRoute(outlet: RouterOutlet) {
+    return outlet && outlet.activatedRouteData;
+  }
+
+  public switchFooter(state): void {
+    this.isFooterShow = state;
+  }
+}

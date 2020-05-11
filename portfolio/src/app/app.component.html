@@ -1,5 +1,11 @@
-<div class="wrapper" @fade>
+<div class="wrapper">
   <app-header></app-header>
-  <router-outlet></router-outlet>
-  <app-footer></app-footer>
+  <div
+    [@routeAnimations]="prepareRoute(outlet)"
+    (@routeAnimations.start)="switchFooter(false)"
+    (@routeAnimations.done)="switchFooter(true)"
+  >
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+  <app-footer *ngIf="isFooterShow"></app-footer>
 </div>

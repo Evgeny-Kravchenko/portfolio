@@ -11,10 +11,12 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomePageComponent,
+    data: {animation: 'HomePage'}
   },
   {
     path: 'about',
     loadChildren: () => import('./about/about.module').then(m => m.AboutModule),
+    data: {animation: 'AboutPage'}
   }
 ];
 
