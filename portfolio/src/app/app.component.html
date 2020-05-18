@@ -2,8 +2,8 @@
   <app-header></app-header>
   <div
     [@routeAnimations]="prepareRoute(outlet)"
-    (@routeAnimations.start)="switchFooter(false)"
-    (@routeAnimations.done)="switchFooter(true)"
+    (@routeAnimations.start)="switchFooter($event)"
+    (@routeAnimations.done)="switchFooter($event)"
   >
     <router-outlet #outlet="outlet"></router-outlet>
   </div>

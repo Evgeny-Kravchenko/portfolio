@@ -2,10 +2,10 @@
   <h2 class="block-name">My works</h2>
   <mat-tab-group>
     <mat-tab label="All">
-      <app-item-work *ngFor="let work of works" [work]="work"></app-item-work>
+      <app-item-work *ngFor="let work of works; let i = index" [work]="work"></app-item-work>
     </mat-tab>
     <mat-tab label="Template">
-      <app-item-work *ngFor="let work of works | worksFilter:'HTML&CSS'" [work]="work"></app-item-work>
+      <app-item-work *ngFor="let work of (works | worksFilter:'HTML&CSS'); let i = index" [work]="work"></app-item-work>
     </mat-tab>
     <mat-tab label="JS">
       <app-item-work *ngFor="let work of works | worksFilter:'JS'" [work]="work"></app-item-work>

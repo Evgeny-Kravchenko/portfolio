@@ -1,15 +1,16 @@
-import {Component, OnInit } from '@angular/core';
+import {ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AboutComponent implements OnInit {
   public items: Array<number>;
   public showAmount: number;
 
-  constructor() {}
+  constructor(private ref: ChangeDetectorRef) {}
 
   public ngOnInit(): void {
     this.items = [this.showAmount];
@@ -17,6 +18,7 @@ export class AboutComponent implements OnInit {
     setInterval(() => {
       this.showAmount += 1;
       this.items = [this.showAmount];
+      this.ref.detectChanges();
     }, 20000);
   }
 }

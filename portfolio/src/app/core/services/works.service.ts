@@ -13,4 +13,9 @@ export class WorksService {
   public getWorks(): Array<IWorkItem> {
     return this.works;
   }
+
+  public getWorkByOrder(id: number): IWorkItem {
+    const order = Number(id);
+    return this.works.find(item => item.order === order);
+  }
 }

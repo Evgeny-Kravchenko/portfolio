@@ -1,8 +1,8 @@
 import {
   AfterViewChecked,
   ChangeDetectionStrategy, ChangeDetectorRef,
-  Component, EventEmitter,
-  OnInit, Output,
+  Component,
+  OnInit,
 } from '@angular/core';
 import { Router } from '@angular/router';
 import { IStatePages } from '../../models/state-pages';
@@ -14,7 +14,6 @@ import { IStatePages } from '../../models/state-pages';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent implements OnInit, AfterViewChecked {
-  @Output() public switchFooter = new EventEmitter<boolean>();
   public isNavShown: boolean;
   public statePages: IStatePages;
 
@@ -36,7 +35,6 @@ export class HeaderComponent implements OnInit, AfterViewChecked {
     for (const page of Object.keys(this.statePages)) {
       this.statePages[page] = `/${page}` === path;
     }
-    this.switchFooter.emit(false);
     this.router.navigateByUrl(path);
     if (this.isNavShown) {
       this.showMenu();
