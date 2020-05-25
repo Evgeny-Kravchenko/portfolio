@@ -1,0 +1,130 @@
+@import "variables";
+
+.detailed-information {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+
+.project-name {
+  width: 100%;
+  text-align: center;
+  padding-left: 0;
+}
+
+.btn-back {
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  background-color: rgba(122, 122, 122, 0.7);
+  background-image: url("/assets/images/arrow-menu.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 30px;
+  transition: 0.2s;
+  opacity: 0.7;
+
+  &:hover {
+    background-size: 20px;
+    background-color: $dull-light-green;
+  }
+}
+
+.img-container {
+  width: 100%;
+  position: relative;
+}
+
+.img-project {
+  display: block;
+  width: 100%;
+}
+
+.full-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  background-color: rgba(122, 122, 122, 0.7);
+  right: 0;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.description {
+  text-align: justify;
+  line-height: 2;
+  font-size: 1.4rem;
+  color: $white;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  right: 150px;
+  bottom: 100px;
+
+  &__item {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: 0.2s;
+
+
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+
+  .github {
+    background-image: url('/assets/images/social-media-icon/github.png');
+
+    &:hover {
+      background-image: url('/assets/images/social-media-icon/github-hover.png');
+    }
+  }
+
+  .netlify {
+    background-image: url('/assets/images/social-media-icon/netlify.png');
+
+    &:hover {
+      background-image: url('/assets/images/social-media-icon/netlify-hover.png');
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .description {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 850px){
+  .full-description {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .full-description {
+    position: static;
+    width: 100%;
+  }
+
+  .btn-back {
+    width: 40px;
+    height: 40px;
+    background-size: 20px;
+  }
+}
