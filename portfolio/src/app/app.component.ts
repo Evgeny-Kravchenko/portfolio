@@ -6,6 +6,7 @@ import {
 } from '@angular/core';
 import { slideInAnimation } from './animation';
 import { RouterOutlet } from '@angular/router';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-root',
@@ -17,10 +18,17 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent implements OnInit {
   public isFooterShow: boolean;
 
-  constructor(private ref: ChangeDetectorRef) {}
+  constructor(
+    private ref: ChangeDetectorRef,
+    private spinner: NgxSpinnerService
+  ) {}
 
   public ngOnInit(): void {
     this.isFooterShow = false;
+    this.spinner.show();
+    setTimeout(() => {
+      this.spinner.hide();
+    }, 0);
   }
 
   public prepareRoute(outlet: RouterOutlet) {
