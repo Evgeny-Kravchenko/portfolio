@@ -61,15 +61,15 @@
 }
 
 .github {
-  background-image: url("/assets/images/social-media-icon/github.png");
+  background-image: url("~/assets/images/social-media-icon/github.png");
 }
 
 .linkedIn {
-  background-image: url("/assets/images/social-media-icon/linkedin.png");
+  background-image: url("~/assets/images/social-media-icon/linkedin.png");
 }
 
 .telegram {
-  background-image: url("/assets/images/social-media-icon/telegram.png");
+  background-image: url("~/assets/images/social-media-icon/telegram.png");
 }
 
 .name,
@@ -93,7 +93,7 @@
   font-size: 1.25rem;
 
   &::before {
-    content: url("/assets/images/location-icon.png");
+    content: url("~/assets/images/location-icon.png");
     position: absolute;
     left: -20px;
   }

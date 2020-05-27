@@ -17,7 +17,7 @@
   box-shadow: 0 12px 31px -29px rgba(0, 0, 0, 0.75);
 
   &::after {
-    content: url("/assets/images/tools.png");
+    content: url("~/assets/images/tools.png");
     position: absolute;
     bottom: -49px;
     left: calc(50% - 52px);
