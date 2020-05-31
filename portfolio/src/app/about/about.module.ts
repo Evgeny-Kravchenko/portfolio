@@ -7,6 +7,7 @@ import { CertificatesComponent } from './components/certificates/certificates.co
 import { BiographyComponent } from './components/biography/biography.component';
 import { TecnologiesComponent } from './components/tecnologies/tecnologies.component';
 import { CanvasAnimationService } from './services/canvas-animation.service';
+import {NgxSpinnerModule} from "ngx-spinner";
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { CanvasAnimationService } from './services/canvas-animation.service';
     BiographyComponent,
     TecnologiesComponent,
   ],
-  imports: [CommonModule, AboutRoutingModule],
+  imports: [CommonModule, AboutRoutingModule, NgxSpinnerModule],
   providers: [CanvasAnimationService],
 })
 export class AboutModule {}

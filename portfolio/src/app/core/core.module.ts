@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { WorkDescriptionComponent } from './pages/work-description/work-description.component';
+import {NgxSpinnerModule} from "ngx-spinner";
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { WorkDescriptionComponent } from './pages/work-description/work-descript
     BrowserAnimationsModule,
     MatTabsModule,
     MatCardModule,
+    NgxSpinnerModule
   ],
   exports: [HeaderComponent, FooterComponent, BrowserAnimationsModule],
   providers: [WorksService],

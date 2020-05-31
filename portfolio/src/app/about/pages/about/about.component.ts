@@ -1,4 +1,10 @@
-import {ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit} from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  Component,
+  OnInit,
+} from '@angular/core';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-about',
@@ -9,8 +15,10 @@ import {ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit} from '@an
 export class AboutComponent implements OnInit {
   public items: Array<number>;
   public showAmount: number;
-
-  constructor(private ref: ChangeDetectorRef) {}
+  constructor(
+    private ref: ChangeDetectorRef,
+    private spinner: NgxSpinnerService
+  ) {}
 
   public ngOnInit(): void {
     this.items = [this.showAmount];
@@ -20,5 +28,9 @@ export class AboutComponent implements OnInit {
       this.items = [this.showAmount];
       this.ref.detectChanges();
     }, 20000);
+    this.spinner.show();
+    setTimeout(() => {
+      this.spinner.hide();
+    }, 500);
   }
 }

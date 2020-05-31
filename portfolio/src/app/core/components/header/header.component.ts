@@ -1,11 +1,13 @@
 import {
   AfterViewChecked,
-  ChangeDetectionStrategy, ChangeDetectorRef,
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
   Component,
   OnInit,
 } from '@angular/core';
 import { Router } from '@angular/router';
 import { IStatePages } from '../../models/state-pages';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-header',
@@ -17,7 +19,11 @@ export class HeaderComponent implements OnInit, AfterViewChecked {
   public isNavShown: boolean;
   public statePages: IStatePages;
 
-  constructor(private router: Router, private ref: ChangeDetectorRef) {}
+  constructor(
+    private router: Router,
+    private ref: ChangeDetectorRef,
+    private spinner: NgxSpinnerService
+  ) {}
 
   public ngOnInit(): void {
     this.isNavShown = false;
@@ -32,9 +38,13 @@ export class HeaderComponent implements OnInit, AfterViewChecked {
   }
 
   public goTo(path): void {
+    if (this.router.url === `${path}`) {
+      return;
+    }
     for (const page of Object.keys(this.statePages)) {
       this.statePages[page] = `/${page}` === path;
     }
+    this.spinner.show();
     this.router.navigateByUrl(path);
     if (this.isNavShown) {
       this.showMenu();
