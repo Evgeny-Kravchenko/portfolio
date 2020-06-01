@@ -111,7 +111,7 @@ export const works: Array<IWorkItem> = [
       'add fonts and bootstrap into the project, creating lazy-loaded modules.\n' +
       'You can see the code of this project by clicking on the link GithHub, or you can see the production of this works by clicking on the link Netlify. \n',
     githublink: 'https://github.com/rss-group-6/culture-portal',
-    deploylink: 'https://theater-directors.netlify.app/',
+    deploylink: 'https://culture-portal-evgen.netlify.app/',
   },
   {
     order: 7,
