@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Bebas Neue';
-  src: url('./assets/fonts/Bebas-Neue/BebasNeueRegular.woff2') format('woff2'),
-  url('./assets/fonts/Bebas-Neue/BebasNeueRegular.woff') format('woff'),
-  url('./assets/fonts/Bebas-Neue/BebasNeueRegular.ttf') format('truetype');
+  src: url('/assets/fonts/Bebas-Neue/BebasNeueRegular.woff2') format('woff2'),
+  url('/assets/fonts/Bebas-Neue/BebasNeueRegular.woff') format('woff'),
+  url('/assets/fonts/Bebas-Neue/BebasNeueRegular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -10,63 +10,63 @@
 
 @font-face {
   font-family: 'Arial';
-  src: url('~/assets/fonts/Arial/ArialMT.woff2') format('woff2'),
-  url('~/assets/fonts/Arial/ArialMT.woff') format('woff'),
-  url('~/assets/fonts/Arial/ArialMT.ttf') format('truetype');
+  src: url('/assets/fonts/Arial/ArialMT.woff2') format('woff2'),
+  url('/assets/fonts/Arial/ArialMT.woff') format('woff'),
+  url('/assets/fonts/Arial/ArialMT.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Arial';
-  src: url('~/assets/fonts/Arial/Arial-Black.woff2') format('woff2'),
-  url('~/assets/fonts/Arial/Arial-Black.woff') format('woff'),
-  url('~/assets/fonts/Arial/Arial-Black.ttf') format('truetype');
+  src: url('/assets/fonts/Arial/Arial-Black.woff2') format('woff2'),
+  url('/assets/fonts/Arial/Arial-Black.woff') format('woff'),
+  url('/assets/fonts/Arial/Arial-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cambria';
-  src: url('~/assets/fonts/Cambria/Cambria.woff2') format('woff2'),
-  url('~/assets/fonts/Cambria/Cambria.woff') format('woff'),
-  url('~/assets/fonts/Cambria/Cambria.ttf') format('truetype');
+  src: url('/assets/fonts/Cambria/Cambria.woff2') format('woff2'),
+  url('/assets/fonts/Cambria/Cambria.woff') format('woff'),
+  url('/assets/fonts/Cambria/Cambria.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cambria';
-  src: url('~/assets/fonts/Cambria/Cambria-Italic.woff2') format('woff2'),
-  url('~/assets/fonts/Cambria/Cambria-Italic.woff') format('woff'),
-  url('~/assets/fonts/Cambria/Cambria-Italic.ttf') format('truetype');
+  src: url('/assets/fonts/Cambria/Cambria-Italic.woff2') format('woff2'),
+  url('/assets/fonts/Cambria/Cambria-Italic.woff') format('woff'),
+  url('/assets/fonts/Cambria/Cambria-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Helvetica LT Std Cond';
-  src: url('~/assets/fonts/Helvetica-LT/HelveticaLTStd-LightCond.woff2') format('woff2'),
-  url('~/assets/fonts/Helvetica-LT/HelveticaLTStd-LightCond.woff') format('woff'),
-  url('~/assets/fonts/Helvetica-LT/HelveticaLTStd-LightCond.ttf') format('truetype');
+  src: url('/assets/fonts/Helvetica-LT/HelveticaLTStd-LightCond.woff2') format('woff2'),
+  url('/assets/fonts/Helvetica-LT/HelveticaLTStd-LightCond.woff') format('woff'),
+  url('/assets/fonts/Helvetica-LT/HelveticaLTStd-LightCond.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PT Sans';
-  src: url('~/assets/fonts/PT-Sans/PTSans-Regular.woff2') format('woff2'),
-  url('~/assets/fonts/PT-Sans/PTSans-Regular.woff') format('woff'),
-  url('~/assets/fonts/PT-Sans/PTSans-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/PT-Sans/PTSans-Regular.woff2') format('woff2'),
+  url('/assets/fonts/PT-Sans/PTSans-Regular.woff') format('woff'),
+  url('/assets/fonts/PT-Sans/PTSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Boxing Brophius';
-  src: url('~/assets/fonts/BoxinBrophius/BoxingBrophius.woff2') format('woff2'),
-  url('~/assets/fonts/BoxinBrophius/BoxingBrophius.woff') format('woff'),
-  url('~/assets/fonts/BoxinBrophius/BoxingBrophius.ttf') format('truetype');
+  src: url('/assets/fonts/BoxinBrophius/BoxingBrophius.woff2') format('woff2'),
+  url('/assets/fonts/BoxinBrophius/BoxingBrophius.woff') format('woff'),
+  url('/assets/fonts/BoxinBrophius/BoxingBrophius.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
