@@ -128,4 +128,17 @@ export const works: Array<IWorkItem> = [
     githublink: 'https://github.com/Evgeny-Kravchenko/nodejs-course-template',
     deploylink: '',
   },
+  {
+    order: 8,
+    title: 'Todo app',
+    imageSrc: './assets/images/projects-image/todo-app-react.jpg',
+    description:
+      'This is my first React application. I have considered basic blocks such as components, props, state, shadow DOM, custom events, jsx, functional components, classes-components.',
+    type: 'React',
+    fullDescription:
+      'This is my first React application. I have considered basic blocks such as components, props, state, shadow DOM, custom events, jsx, functional components, classes-components. ' +
+      'I didn\'t use \'create react app\' in this project, because I was interested in to create basic structure of app by myself. Also I used the library \'prop-types\' to type the object \'props\'.',
+    githublink: 'https://github.com/Evgeny-Kravchenko/React-todo-list',
+    deploylink: 'https://evgen-react-todo.netlify.app',
+  },
 ];

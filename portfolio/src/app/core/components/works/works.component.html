@@ -16,5 +16,8 @@
     <mat-tab label="NodeJS">
       <app-item-work *ngFor="let work of works | worksFilter:'NodeJS'" [work]="work"></app-item-work>
     </mat-tab>
+    <mat-tab label="React">
+      <app-item-work *ngFor="let work of works | worksFilter:'React'" [work]="work"></app-item-work>
+    </mat-tab>
   </mat-tab-group>
 </section>
