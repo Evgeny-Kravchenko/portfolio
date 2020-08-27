@@ -19,7 +19,7 @@
   width: 30px;
   height: 100%;
   background-color: rgba(122, 122, 122, 0.7);
-  background-image: url("~/assets/images/arrow-menu.png");
+  background-image: url("../../../../assets/images/arrow-menu.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 30px;
@@ -88,18 +88,18 @@
   }
 
   .github {
-    background-image: url('~/assets/images/social-media-icon/github.png');
+    background-image: url('../../../../assets/images/social-media-icon/github.png');
 
     &:hover {
-      background-image: url('~/assets/images/social-media-icon/github-hover.png');
+      background-image: url('../../../../assets/images/social-media-icon/github-hover.png');
     }
   }
 
   .netlify {
-    background-image: url('~/assets/images/social-media-icon/netlify.png');
+    background-image: url('../../../../assets/images/social-media-icon/netlify.png');
 
     &:hover {
-      background-image: url('~/assets/images/social-media-icon/netlify-hover.png');
+      background-image: url('../../../../assets/images/social-media-icon/netlify-hover.png');
     }
   }
 }

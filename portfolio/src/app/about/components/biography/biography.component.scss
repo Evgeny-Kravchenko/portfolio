@@ -49,17 +49,17 @@
 
 .github {
   grid-area: github;
-  background-image: url('~/assets/images/social-media-icon/github.png');
+  background-image: url('../../../../assets/images/social-media-icon/github.png');
 }
 
 .linkedIn {
   grid-area: linkedIn;
-  background-image: url('~/assets/images/social-media-icon/linkedin.png');
+  background-image: url('../../../../assets/images/social-media-icon/linkedin.png');
 }
 
 .telegram {
   grid-area: telegram;
-  background-image: url('~/assets/images/social-media-icon/telegram.png');
+  background-image: url('../../../../assets/images/social-media-icon/telegram.png');
 }
 
 @media screen and (max-width: 900px) {
