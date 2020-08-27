@@ -137,8 +137,20 @@ export const works: Array<IWorkItem> = [
     type: 'React',
     fullDescription:
       'This is my first React application. I have considered basic blocks such as components, props, state, shadow DOM, custom events, jsx, functional components, classes-components. ' +
-      'I didn\'t use \'create react app\' in this project, because I was interested in to create basic structure of app by myself. Also I used the library \'prop-types\' to type the object \'props\'.',
+      "I didn't use 'create react app' in this project, because I was interested in to create basic structure of app by myself. Also I used the library 'prop-types' to type the object 'props'.",
     githublink: 'https://github.com/Evgeny-Kravchenko/React-todo-list',
     deploylink: 'https://evgen-react-todo.netlify.app',
+  },
+  {
+    order: 9,
+    title: 'Star Wars',
+    imageSrc: './assets/images/projects-image/sw.jpg',
+    description:
+      'This is an apllication where you can search various information about star wars. This app works with APIs from others sites. This API provides information about Star Wars.',
+    type: 'React',
+    fullDescription:
+      'This is an apllication where you can search various information about star wars. This app works with APIs from others sites. This API provides information about Star Wars. I have considered various patterns such as High Order Component, Composition. Also in this app was considered lifecycle hooks (componentDidMount, componentDidUpdate, etc.). Router was covered in this app too. To catch different errors was created a special component ErrorBoundary and ErrorIndicator. To make a functional component with state and lifecycle hooks instead class component was used hooks useState, useEffect. etc. You can see the code of this project by clicking on the link GithHub, or you can see the production of this works by clicking on the link Netlify.',
+    githublink: 'https://github.com/Evgeny-Kravchenko/star-db-react',
+    deploylink: 'https://evgen-star-wars.netlify.app',
   },
 ];
